@@ -5,6 +5,9 @@
   "repository": "git@github.com:kasaharu/Portfolio.git",
   "author": "Wataru.Kasahara <kasahara1019@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "nuxt"
+  },
   "dependencies": {
     "nuxt": "^1.4.0"
   }
