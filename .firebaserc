@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "kasaharu-portfolio": {
+      "hosting": {
+        "Portfolio": [
+          "kasaharu-portfolio"
+        ]
+      }
+    }
+  }
+}
