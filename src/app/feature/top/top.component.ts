@@ -7,10 +7,10 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TopComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  readonly name = 'kasaharu (Wataru KASAHARA)';
+  readonly myInfoList: string[] = ['Web Frontend Engineer', 'Angular Japan User Group Staff'];
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
