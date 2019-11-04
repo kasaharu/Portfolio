@@ -1,1 +1,7 @@
-<p>blogs works!</p>
+<h2 class="title">Blogs</h2>
+
+<ul class="contents">
+  <li *ngFor="let blog of blogs">
+    <a href="{{ blog.url }}">{{ blog.name }}</a>
+  </li>
+</ul>
