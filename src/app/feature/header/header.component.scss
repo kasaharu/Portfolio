@@ -1,6 +1,7 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 48px;
   padding: 0 48px;
   background-color: #222;
@@ -8,4 +9,13 @@
 
 .title {
   color: aliceblue;
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+a:not(:last-child) {
+  margin-right: 12px;
 }
