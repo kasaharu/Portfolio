@@ -1,9 +1,9 @@
 {
   "targets": {
-    "kasaharu-portfolio": {
+    "kasaharu-web": {
       "hosting": {
         "Portfolio": [
-          "kasaharu-portfolio"
+          "kasaharu-web"
         ]
       }
     }
