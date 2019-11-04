@@ -1,0 +1,16 @@
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+}
+
+.section {
+  margin: 0 0 24px 24px;
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.contents {
+  margin-left: 48px;
+}

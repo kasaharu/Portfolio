@@ -1,1 +1,15 @@
-<p>activity works!</p>
+<h2 class="title">Slides</h2>
+<section class="section">
+  <a href="{{ slide.url }}">{{ slide.serviceName }}</a>
+</section>
+
+<h2 class="title">SNS</h2>
+<section class="section">
+  <ul>
+    <li class="list-item" *ngFor="let sns of snsList">
+      <a href="{{ sns.url }}">{{ sns.serviceName }}</a>
+    </li>
+  </ul>
+</section>
+
+<h2 class="title">OSS</h2>
