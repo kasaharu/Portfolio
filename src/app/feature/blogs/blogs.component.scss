@@ -6,3 +6,7 @@
 .contents {
   margin-left: 48px;
 }
+
+.list-item:not(:last-child) {
+  margin-bottom: 12px;
+}
