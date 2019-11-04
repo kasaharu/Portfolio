@@ -9,6 +9,9 @@
     },
     "@schematics/angular:service": {
       "lintFix": true
+    },
+    "@schematics/angular:module": {
+      "lintFix": true
     }
   },
   "projects": {
