@@ -1,6 +1,11 @@
 <h2 class="title">Slides</h2>
 <section class="section">
-  <a href="{{ slide.url }}">{{ slide.serviceName }}</a>
+  <ul>
+    <li class="list-item" *ngFor="let slide of slideList">
+      <p>{{ slide.date }}</p>
+      <a href="{{ slide.event.url }}">{{ slide.event.name }}</a> @ <a href="{{ slide.slide.url }}">{{ slide.slide.name }}</a>
+    </li>
+  </ul>
 </section>
 
 <h2 class="title">SNS</h2>

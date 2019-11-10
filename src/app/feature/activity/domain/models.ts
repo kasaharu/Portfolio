@@ -1,6 +1,13 @@
 export interface Slide {
-  serviceName: string;
-  url: string;
+  date: string;
+  event: {
+    name: string;
+    url: string;
+  };
+  slide: {
+    name: string;
+    url: string;
+  };
 }
 
 export interface Sns {
