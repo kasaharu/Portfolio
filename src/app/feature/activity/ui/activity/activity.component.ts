@@ -1,14 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-
-export interface Slide {
-  serviceName: string;
-  url: string;
-}
-
-export interface Sns {
-  serviceName: string;
-  url: string;
-}
+import { Slide, Sns } from '../../domain/models';
 
 @Component({
   selector: 'app-activity',
