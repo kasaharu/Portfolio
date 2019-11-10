@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { Slide, Sns } from '../../domain/models';
+import { slide } from '../../data/slide';
+import { snsList } from '../../data/sns';
 
 @Component({
   selector: 'app-activity',
@@ -9,12 +10,8 @@ import { Slide, Sns } from '../../domain/models';
 })
 export class ActivityComponent implements OnInit {
   constructor() {}
-  readonly slide: Slide = { serviceName: 'Speaker Deck', url: 'https://speakerdeck.com/kasaharu' };
-  readonly snsList: Sns[] = [
-    { serviceName: 'GitHub', url: 'https://github.com/kasaharu' },
-    { serviceName: 'Twitter', url: 'https://twitter.com/kasaharu' },
-    { serviceName: 'connpass', url: 'https://connpass.com/user/kasaharu/' },
-  ];
+  readonly slide = slide;
+  readonly snsList = snsList;
 
   ngOnInit() {}
 }
