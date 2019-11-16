@@ -1,18 +1,67 @@
-version: 2
-jobs:
-  build:
+version: 2.1
+
+executors:
+  frontend-executor:
     docker:
       - image: circleci/node:12.13-stretch-browsers
-    working_directory: ~/repo
+
+references:
+  cache_key: &cache_key v2-dependencies-{{ checksum "yarn.lock" }}
+  save_node_modules: &save_node_modules
+    save_cache:
+      paths:
+        - node_modules
+      key: *cache_key
+  restore_node_modules: &restore_node_modules
+    restore_cache:
+      keys:
+        - *cache_key
+        - v2-dependencies-
+
+workflows:
+  version: 2
+  all-check:
+    jobs:
+      - package-install-and-lint
+      - build:
+          requires:
+            - package-install-and-lint
+      - test:
+          requires:
+            - package-install-and-lint
+      - e2e:
+          requires:
+            - package-install-and-lint
+
+jobs:
+  package-install-and-lint:
+    executor: frontend-executor
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "yarn.lock" }}
-            - v1-dependencies-
+      - *restore_node_modules
       - run: yarn install
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "yarn.lock" }}
+      - *save_node_modules
+      - run: yarn lint
+  build:
+    executor: frontend-executor
+    steps:
+      - checkout
+      - *restore_node_modules
+      - *save_node_modules
+      - run: yarn build
+  test:
+    executor: frontend-executor
+    steps:
+      - checkout
+      - *restore_node_modules
+      - *save_node_modules
       - run: yarn test
+      - store_artifacts:
+          path: coverage
+  e2e:
+    executor: frontend-executor
+    steps:
+      - checkout
+      - *restore_node_modules
+      - *save_node_modules
+      - run: yarn e2e
