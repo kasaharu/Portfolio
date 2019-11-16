@@ -6,7 +6,7 @@ executors:
       - image: circleci/node:12.13-stretch-browsers
 
 references:
-  cache_key: &cache_key v1-dependencies-{{ checksum "yarn.lock" }}
+  cache_key: &cache_key v2-dependencies-{{ checksum "yarn.lock" }}
   save_node_modules: &save_node_modules
     save_cache:
       paths:
@@ -16,7 +16,7 @@ references:
     restore_cache:
       keys:
         - *cache_key
-        - v1-dependencies-
+        - v2-dependencies-
 
 workflows:
   version: 2
