@@ -1,4 +1,20 @@
 version: 2
+
+workflows:
+  version: 2
+  all-check:
+    jobs:
+      - lint
+      - build:
+          requires:
+            - lint
+      - test:
+          requires:
+            - lint
+      - e2e:
+          requires:
+            - lint
+
 jobs:
   lint:
     docker:
