@@ -1,5 +1,17 @@
 version: 2
 
+references:
+  save_node_modules: &save_node_modules
+    save_cache:
+      paths:
+        - node_modules
+      key: v1-dependencies-{{ checksum "yarn.lock" }}
+  restore_node_modules: &restore_node_modules
+    restore_cache:
+      keys:
+        - v1-dependencies-{{ checksum "yarn.lock" }}
+        - v1-dependencies-
+
 workflows:
   version: 2
   all-check:
