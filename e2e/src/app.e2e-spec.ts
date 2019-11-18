@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  xit('should display welcome message', () => {
+  it('should display header title', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Portfolio app is running!');
+    expect(page.getHeaderTitleText()).toEqual('kasaharu.web');
   });
 
   afterEach(async () => {
