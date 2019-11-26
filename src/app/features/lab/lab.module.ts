@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-  ],
+  imports: [CommonModule],
 })
-export class LabsModule { }
+export class LabModule {}

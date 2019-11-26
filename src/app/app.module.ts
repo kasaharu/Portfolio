@@ -6,12 +6,12 @@ import { AppComponent } from './app.component';
 import { ActivityComponent } from './features/activity/ui/activity/activity.component';
 import { BlogsComponent } from './features/blogs/blogs.component';
 import { HeaderComponent } from './features/header/header.component';
-import { LabsModule } from './features/labs/labs.module';
+import { LabModule } from './features/lab/lab.module';
 import { TopComponent } from './features/top/top.component';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, TopComponent, BlogsComponent, ActivityComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, LabsModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, LabModule],
   providers: [],
   bootstrap: [AppComponent],
 })
