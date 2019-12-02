@@ -4,8 +4,7 @@ import { PageTitleComponent } from './ui/page-title/page-title.component';
 
 @NgModule({
   declarations: [PageTitleComponent],
-  imports: [
-    CommonModule,
-  ],
+  imports: [CommonModule],
+  exports: [PageTitleComponent],
 })
-export class SharedModule { }
+export class SharedModule {}
