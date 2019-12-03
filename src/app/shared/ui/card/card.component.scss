@@ -1,0 +1,21 @@
+.card {
+  border: solid 1px #eeeeee;
+  border-top: solid 4px #2222cc;
+  border-bottom: solid 2px #cccccc;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.external-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link {
+  margin-left: 28px;
+}
