@@ -15,7 +15,7 @@
     }
   },
   "projects": {
-    "Portfolio": {
+    "portfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -29,7 +29,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Portfolio",
+            "outputPath": "dist/portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -80,18 +80,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Portfolio:build"
+            "browserTarget": "portfolio:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Portfolio:build:production"
+              "browserTarget": "portfolio:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Portfolio:build"
+            "browserTarget": "portfolio:build"
           }
         },
         "test": {
@@ -129,11 +129,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Portfolio:serve"
+            "devServerTarget": "portfolio:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Portfolio:serve:production"
+              "devServerTarget": "portfolio:serve:production"
             }
           }
         },
@@ -144,5 +144,5 @@
       }
     }
   },
-  "defaultProject": "Portfolio"
+  "defaultProject": "portfolio"
 }
