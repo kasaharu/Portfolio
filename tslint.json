@@ -10,7 +10,7 @@
     "contextual-lifecycle": true,
     "cyclomatic-complexity": [
       true,
-      20
+      3
     ],
     "directive-class-suffix": true,
     "directive-selector": [
