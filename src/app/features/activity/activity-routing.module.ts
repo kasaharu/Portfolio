@@ -1,10 +1,10 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { ActivityComponent } from './ui/activity/activity.component';
 
+const routes: Routes = [{ path: '', component: ActivityComponent }];
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-  ],
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
 })
-export class ActivityRoutingModule { }
+export class ActivityRoutingModule {}
