@@ -14,3 +14,8 @@ export interface Sns {
   serviceName: string;
   url: string;
 }
+
+export interface Oss {
+  date: string;
+  name: string;
+}
