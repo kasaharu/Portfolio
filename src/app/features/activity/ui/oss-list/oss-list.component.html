@@ -1,1 +1,9 @@
-<p>oss-list works!</p>
+<app-page-title [title]="'OSS Activity'"></app-page-title>
+<section class="section">
+  <ul>
+    <li class="list-item" *ngFor="let oss of ossList">
+      <h3>{{ oss.date }}</h3>
+      <a href="https://github.com/{{ oss.name }}" target="_blank" rel="noopener">{{ oss.name }}</a>
+    </li>
+  </ul>
+</section>

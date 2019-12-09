@@ -1,0 +1,7 @@
+.section {
+  margin: 0 0 24px 24px;
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 12px;
+}
