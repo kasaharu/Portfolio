@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from '../../shared/shared.module';
 import { ActivityRoutingModule } from './activity-routing.module';
 import { ActivityComponent } from './ui/activity/activity.component';
+import { OssListComponent } from './ui/oss-list/oss-list.component';
 
 @NgModule({
-  declarations: [ActivityComponent],
+  declarations: [ActivityComponent, OssListComponent],
   imports: [CommonModule, SharedModule, ActivityRoutingModule],
 })
 export class ActivityModule {}
