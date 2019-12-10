@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { PageTitleComponent } from '../../../../shared/ui/page-title/page-title.component';
 import { ActivityComponent } from './activity.component';
 
 describe('ActivityComponent', () => {
@@ -8,7 +8,7 @@ describe('ActivityComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ActivityComponent],
+      declarations: [ActivityComponent, PageTitleComponent],
     }).compileComponents();
   }));
 

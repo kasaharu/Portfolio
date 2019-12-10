@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { PageTitleComponent } from '../../../../shared/ui/page-title/page-title.component';
 import { OssListComponent } from './oss-list.component';
 
 describe('OssListComponent', () => {
@@ -8,9 +8,8 @@ describe('OssListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OssListComponent ],
-    })
-    .compileComponents();
+      declarations: [OssListComponent, PageTitleComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
