@@ -13,4 +13,10 @@ export const contents: Content[] = [
     repositoryName: '',
     repositoryUrl: '',
   },
+  {
+    title: 'Annictor : Annict viewer',
+    demoPageUrl: 'https://annictor-view.web.app/',
+    repositoryName: 'kasaharu/annictor',
+    repositoryUrl: 'https://github.com/kasaharu/annictor',
+  },
 ];
