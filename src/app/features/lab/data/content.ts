@@ -7,4 +7,10 @@ export const contents: Content[] = [
     repositoryName: 'kasaharu/try-redux-toolkit',
     repositoryUrl: 'https://github.com/kasaharu/try-redux-toolkit',
   },
+  {
+    title: 'Qiewer : Qiita viewer',
+    demoPageUrl: 'https://qiewer-app.web.app/',
+    repositoryName: '',
+    repositoryUrl: '',
+  },
 ];
