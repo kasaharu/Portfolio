@@ -7,6 +7,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test --watch false --code-coverage",
+    "test:ci": "ng test --watch false --code-coverage --browsers=ChromeHeadlessCI",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "prettier": "prettier --write './**/*.{ts,html,scss}'",
