@@ -55,7 +55,7 @@ jobs:
       - checkout
       - *restore_node_modules
       - *save_node_modules
-      - run: yarn test
+      - run: yarn test:ci
       - store_artifacts:
           path: coverage
   e2e:
@@ -64,4 +64,4 @@ jobs:
       - checkout
       - *restore_node_modules
       - *save_node_modules
-      - run: yarn e2e
+      - run: yarn e2e:ci
