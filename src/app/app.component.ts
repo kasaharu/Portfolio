@@ -1,5 +1,5 @@
-import { IdleMonitorService } from '@scullyio/ng-lib';
 import { Component } from '@angular/core';
+import { IdleMonitorService } from '@scullyio/ng-lib';
 
 @Component({
   selector: 'app-root',
