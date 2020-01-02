@@ -6,6 +6,8 @@
 /out-tsc
 # Only exists if Bazel was run
 /bazel-out
+# Scully
+src/assets/scully-routes.json
 
 # dependencies
 /node_modules
