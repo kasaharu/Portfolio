@@ -4,7 +4,5 @@ import { Directive } from '@angular/core';
   selector: '[appExternalLink]',
 })
 export class ExternalLinkDirective {
-
-  constructor() { }
-
+  constructor() {}
 }
