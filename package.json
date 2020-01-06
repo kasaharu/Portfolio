@@ -14,7 +14,9 @@
     "prettier": "prettier --write './**/*.{ts,html,scss}'",
     "prettier:check": "prettier --check './**/*.{ts,html,scss}'",
     "scully": "scully",
-    "scully:serve": "scully serve"
+    "scully:serve": "scully serve",
+    "predeploy": "ng build --prod && yarn scully",
+    "deploy": "ng deploy"
   },
   "private": true,
   "dependencies": {
