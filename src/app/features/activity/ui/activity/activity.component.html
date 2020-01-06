@@ -3,7 +3,8 @@
   <ul>
     <li class="list-item" *ngFor="let slide of slideList">
       <p>{{ slide.date }}</p>
-      <a href="{{ slide.event.url }}">{{ slide.event.name }}</a> @ <a href="{{ slide.slide.url }}">{{ slide.slide.name }}</a>
+      <a appExternalLink href="{{ slide.event.url }}">{{ slide.event.name }}</a> @
+      <a appExternalLink href="{{ slide.slide.url }}">{{ slide.slide.name }}</a>
     </li>
   </ul>
 </section>
@@ -12,7 +13,7 @@
 <section class="section">
   <ul>
     <li class="list-item" *ngFor="let sns of snsList">
-      <a href="{{ sns.url }}">{{ sns.serviceName }}</a>
+      <a appExternalLink href="{{ sns.url }}">{{ sns.serviceName }}</a>
     </li>
   </ul>
 </section>

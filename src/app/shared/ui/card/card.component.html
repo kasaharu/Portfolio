@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-title">{{ title }}</div>
   <div class="external-links">
-    <a *ngIf="demoPageUrl" class="link" href="{{ demoPageUrl }}" target="_blank" rel="noopener">demo</a>
-    <a *ngIf="repositoryUrl" class="link" href="{{ repositoryUrl }}" target="_blank" rel="noopener">GitHub - {{ repositoryName }}</a>
+    <a *ngIf="demoPageUrl" class="link" appExternalLink href="{{ demoPageUrl }}">demo</a>
+    <a *ngIf="repositoryUrl" class="link" appExternalLink href="{{ repositoryUrl }}">GitHub - {{ repositoryName }}</a>
   </div>
 </div>

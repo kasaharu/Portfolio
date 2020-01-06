@@ -2,6 +2,6 @@
 
 <ul class="contents">
   <li class="list-item" *ngFor="let blog of blogs">
-    <a href="{{ blog.url }}">{{ blog.name }}</a>
+    <a appExternalLink href="{{ blog.url }}">{{ blog.name }}</a>
   </li>
 </ul>

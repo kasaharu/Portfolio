@@ -3,7 +3,7 @@
   <ul>
     <li class="list-item" *ngFor="let oss of ossList">
       <h3>{{ oss.date }}</h3>
-      <a href="https://github.com/{{ oss.name }}" target="_blank" rel="noopener">{{ oss.name }}</a>
+      <a appExternalLink href="https://github.com/{{ oss.name }}">{{ oss.name }}</a>
     </li>
   </ul>
 </section>
