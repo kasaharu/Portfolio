@@ -29,9 +29,9 @@ workflows:
       - test:
           requires:
             - package-install-and-lint
-      - e2e:
-          requires:
-            - package-install-and-lint
+              #      - e2e:
+              #          requires:
+              #            - package-install-and-lint
 
 jobs:
   package-install-and-lint:
