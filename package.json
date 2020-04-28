@@ -33,7 +33,7 @@
     "@scullyio/ng-lib": "latest",
     "@scullyio/scully": "latest",
     "firebase": "6.6.2",
-    "rxjs": "~6.5.3",
+    "rxjs": "~6.5.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.3"
   },
