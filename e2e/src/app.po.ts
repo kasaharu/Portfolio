@@ -6,6 +6,6 @@ export class AppPage {
   }
 
   getHeaderTitleText() {
-    return element(by.css('app-root app-header header #header-text')).getText() as Promise<string>;
+    return element(by.css('app-root app-header header #headerTitle')).getText() as Promise<string>;
   }
 }
