@@ -1,6 +1,9 @@
 import { Oss } from '../domain/models';
 
 export const ossList: Oss[] = [
+  { date: '2020.04.20', name: 'ngrx/platform/pull/2500' },
+  { date: '2019.12.24', name: 'angular/angular-ja/pull/473' },
+  { date: '2019.12.15', name: 'angular/angular-ja/pull/471' },
   { date: '2019.12.06', name: 'angular/angular-cli/pull/16368' },
   { date: '2019.08.25', name: 'angular/angular-cli/pull/15438' },
   { date: '2019.08.01', name: 'JamesHenry/ng-custom-element/pull/14' },
