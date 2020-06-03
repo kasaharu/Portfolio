@@ -2,6 +2,12 @@ import { Content } from '../domain/models';
 
 export const contents: Content[] = [
   {
+    title: 'MobTimer',
+    demoPageUrl: 'https://kasaharu.github.io/mobtimer',
+    repositoryName: 'kasaharu/mobtimer',
+    repositoryUrl: 'https://github.com/kasaharu/mobtimer',
+  },
+  {
     title: 'Redux Toolkit を試す',
     demoPageUrl: 'https://kasaharu.github.io/try-redux-toolkit',
     repositoryName: 'kasaharu/try-redux-toolkit',
