@@ -195,13 +195,6 @@
   optionalDependencies:
     parse5 "^5.0.0"
 
-"@angular/cdk@^9.2.0":
-  version "9.2.2"
-  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-9.2.2.tgz#776be85aa55146f00dcd4909b81c67da47286c75"
-  integrity sha512-VNd+KuMN6cBcy4/8OyMxqYaxdjPP6IyCqIVijB2JREkc5Sg4VWmPgx2L3rHt/DzjsVBVRgx35uqOMymDezG3jQ==
-  optionalDependencies:
-    parse5 "^5.0.0"
-
 "@angular/cli@~10.1.7":
   version "10.1.7"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-10.1.7.tgz#97782dab335fc7f5d30d78dfa5b5c0a344f91186"
@@ -1664,12 +1657,12 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
 
-"@kasaharu/ng-workbox@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@kasaharu/ng-workbox/-/ng-workbox-0.1.1.tgz#f6698ffe0d5f079b476258a8fb418f83a4aa7b15"
-  integrity sha512-+OFCisrdR2PnptLY4FMab5vBtmJBLGGdnmWY+326v9SFaZeLGoUjVtn7WdAcn4jnF+eelpUF0Ch31Joz9hGSpg==
+"@kasaharu/ng-workbox@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@kasaharu/ng-workbox/-/ng-workbox-0.3.0.tgz#73552b8d5bf8e3ad401745c05b32fe8392d18922"
+  integrity sha512-0qH/fbv6JoLjmhtf07if0kkmIMTXWIEVf6RyUCRR8lEFJUE1J5f2BsZXXQ+vfBBqgyhWEgP7Qr3jtWh4Ji4RNA==
   dependencies:
-    "@angular/cdk" "^9.2.0"
+    tslib "^2.0.0"
 
 "@ngtools/webpack@10.1.7":
   version "10.1.7"
