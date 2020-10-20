@@ -12,6 +12,7 @@ export class ActivityComponent implements OnInit {
   constructor() {}
   readonly slideList = slideList;
   readonly snsList = snsList;
+  displayedColumns = ['date', 'slide', 'event'];
 
   ngOnInit() {}
 }

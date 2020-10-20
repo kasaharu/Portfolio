@@ -1,12 +1,29 @@
 <app-page-title [title]="'Slides'"></app-page-title>
-<section class="section">
-  <ul>
-    <li class="list-item" *ngFor="let slide of slideList">
-      <p>{{ slide.date }}</p>
-      <a appExternalLink href="{{ slide.event.url }}">{{ slide.event.name }}</a> @
-      <a appExternalLink href="{{ slide.slide.url }}">{{ slide.slide.name }}</a>
-    </li>
-  </ul>
+
+<section class="section-table">
+  <table mat-table [dataSource]="slideList">
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef>Date</th>
+      <td mat-cell *matCellDef="let element">{{ element.date }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="slide">
+      <th mat-header-cell *matHeaderCellDef>スライド</th>
+      <td mat-cell *matCellDef="let element">
+        <a appExternalLink href="{{ element.slide.url }}">{{ element.slide.name }}</a>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="event">
+      <th mat-header-cell *matHeaderCellDef>イベント</th>
+      <td mat-cell *matCellDef="let element">
+        <a appExternalLink href="{{ element.event.url }}">{{ element.event.name }}</a>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
 </section>
 
 <app-page-title [title]="'SNS'"></app-page-title>
