@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { slideList } from '../../data/slide';
 
 @Component({
   selector: 'app-slide',
@@ -8,6 +9,8 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 })
 export class SlideComponent implements OnInit {
   constructor() {}
+  readonly slideList = slideList;
+  displayedColumns = ['date', 'slide', 'event'];
 
   ngOnInit(): void {}
 }

@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { slideList } from '../../data/slide';
 import { snsList } from '../../data/sns';
 
 @Component({
@@ -10,9 +9,7 @@ import { snsList } from '../../data/sns';
 })
 export class ActivityComponent implements OnInit {
   constructor() {}
-  readonly slideList = slideList;
   readonly snsList = snsList;
-  displayedColumns = ['date', 'slide', 'event'];
 
   ngOnInit() {}
 }
