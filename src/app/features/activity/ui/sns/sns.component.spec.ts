@@ -8,9 +8,8 @@ describe('SnsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SnsComponent ],
-    })
-    .compileComponents();
+      declarations: [SnsComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
