@@ -35,4 +35,12 @@ export const slideList: Slide[] = [
       url: 'https://speakerdeck.com/kasaharu/classi-angular-night-number-1',
     },
   },
+  {
+    date: '2016-12-19',
+    event: { name: '【React.js】LT忘年会', url: 'https://teamspirit.connpass.com/event/46336/' },
+    slide: {
+      name: 'React 初心者が初級者になるまで',
+      url: 'https://speakerdeck.com/kasaharu/react-sakana',
+    },
+  },
 ];
