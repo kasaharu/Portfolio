@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { snsList } from '../../data/sns';
 
 @Component({
   selector: 'app-sns',
@@ -8,6 +9,7 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 })
 export class SnsComponent implements OnInit {
   constructor() {}
+  readonly snsList = snsList;
 
   ngOnInit(): void {}
 }
