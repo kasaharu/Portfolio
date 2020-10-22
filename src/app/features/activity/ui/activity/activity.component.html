@@ -1,8 +1,9 @@
-<app-page-title [title]="'Slides'"></app-page-title>
+<app-page-title [title]="'Activity'"></app-page-title>
 
-<app-page-title [title]="'SNS'"></app-page-title>
+<nav mat-tab-nav-bar>
+  <ng-container *ngFor="let link of links">
+    <a mat-tab-link [active]="activeLink === link" [routerLink]="link">{{ categories[link] }}</a>
+  </ng-container>
+</nav>
 
-<app-page-title [title]="'OSS'"></app-page-title>
-<section class="section">
-  <a routerLink="/activities/oss">OSS 活動履歴はこちら</a>
-</section>
+<router-outlet></router-outlet>
