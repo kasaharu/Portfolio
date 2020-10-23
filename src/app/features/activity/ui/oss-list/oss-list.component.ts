@@ -11,6 +11,7 @@ import { Oss } from '../../domain/models';
 export class OssListComponent implements OnInit {
   constructor() {}
   ossList: Oss[] = ossList;
+  displayedColumns = ['date', 'repository'];
 
   ngOnInit() {}
 }

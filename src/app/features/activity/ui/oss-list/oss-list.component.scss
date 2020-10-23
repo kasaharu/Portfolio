@@ -1,7 +1,12 @@
 .section {
-  margin: 24px 0 24px 24px;
+  margin: 0 0 24px 0;
 }
 
-.list-item:not(:last-child) {
-  margin-bottom: 12px;
+table {
+  width: 100%;
+}
+
+th,
+td {
+  vertical-align: middle;
 }
