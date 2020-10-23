@@ -1,8 +1,8 @@
 <app-page-title [title]="'Activity'"></app-page-title>
 
 <nav mat-tab-nav-bar>
-  <ng-container *ngFor="let link of links">
-    <a mat-tab-link [active]="activeLink === link" [routerLink]="link">{{ categories[link] }}</a>
+  <ng-container *ngFor="let category of categories">
+    <a mat-tab-link [active]="activeLink === category.key" [routerLink]="category.key">{{ category.lable }}</a>
   </ng-container>
 </nav>
 

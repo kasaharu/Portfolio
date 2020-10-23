@@ -17,8 +17,11 @@ export class ActivityComponent implements OnInit {
     });
   }
 
-  categories = { slide: 'Slide', sns: 'SNS', oss: 'OSS' };
-  links = Object.keys(this.categories);
+  categories = [
+    { key: 'slide', lable: 'Slides' },
+    { key: 'sns', lable: 'SNS' },
+    { key: 'oss', lable: 'OSS' },
+  ];
   activeLink!: string;
 
   ngOnInit() {}
