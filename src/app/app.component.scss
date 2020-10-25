@@ -1,6 +1,6 @@
 @import '../assets/styles/properties';
 
-.wrapper {
+:host {
   height: 100vh;
   display: flex;
   flex-direction: column;
