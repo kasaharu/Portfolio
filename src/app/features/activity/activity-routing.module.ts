@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { ActivityComponent } from './ui/activity/activity.component';
 import { OssListComponent } from './ui/oss-list/oss-list.component';
 import { SlideComponent } from './ui/slide/slide.component';
-import { SnsComponent } from './ui/sns/sns.component';
 
 const routes: Routes = [
   {
@@ -11,7 +10,6 @@ const routes: Routes = [
     component: ActivityComponent,
     children: [
       { path: '', redirectTo: 'slide', pathMatch: 'full' },
-      { path: 'sns', component: SnsComponent },
       { path: 'slide', component: SlideComponent },
       { path: 'oss', component: OssListComponent },
     ],

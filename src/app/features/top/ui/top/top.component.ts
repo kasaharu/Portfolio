@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { snsList } from '../../data/sns';
 
 @Component({
   selector: 'app-top',
@@ -11,6 +12,7 @@ export class TopComponent implements OnInit {
 
   readonly name = 'kasaharu (Wataru KASAHARA)';
   readonly myInfoList: string[] = ['Web Frontend Engineer', 'Angular Japan User Group Staff'];
+  readonly snsList = snsList;
 
   ngOnInit() {}
 }

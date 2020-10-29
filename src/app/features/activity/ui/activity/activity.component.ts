@@ -19,7 +19,6 @@ export class ActivityComponent implements OnInit {
 
   categories = [
     { key: 'slide', lable: 'Slides' },
-    { key: 'sns', lable: 'SNS' },
     { key: 'oss', lable: 'OSS' },
   ];
   activeLink!: string;
