@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { PageTitleComponent } from '../../shared/ui/page-title/page-title.component';
+import { PageTitleComponent } from '../../../../shared/ui/page-title/page-title.component';
 import { TopComponent } from './top.component';
 
 describe('TopComponent', () => {

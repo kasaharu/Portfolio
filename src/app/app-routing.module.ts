@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BlogsComponent } from './features/blogs/blogs.component';
 import { LabComponent } from './features/lab/ui/lab/lab.component';
-import { TopComponent } from './features/top/top.component';
+import { TopComponent } from './features/top/ui/top/top.component';
 
 const routes: Routes = [
   { path: '', component: TopComponent },
