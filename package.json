@@ -30,6 +30,7 @@
     "@angular/router": "~10.1.6",
     "@kasaharu/ng-workbox": "^0.3.0",
     "firebase": "7.14.2",
+    "rss-parser": "^3.9.0",
     "rxjs": "~6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
