@@ -32,7 +32,9 @@
     "firebase": "7.14.2",
     "rss-parser": "^3.9.0",
     "rxjs": "~6.6.3",
+    "timers": "^0.1.1",
     "tslib": "^2.0.0",
+    "xml2js": "^0.4.23",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {
@@ -44,6 +46,7 @@
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.8",
     "@types/node": "^12.12.14",
+    "@types/xml2js": "^0.4.5",
     "codelyzer": "^6.0.0",
     "firebase-tools": "8.0.0",
     "fuzzy": "0.1.3",
