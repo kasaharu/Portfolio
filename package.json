@@ -30,7 +30,6 @@
     "@angular/router": "~10.1.6",
     "@kasaharu/ng-workbox": "^0.3.0",
     "firebase": "7.14.2",
-    "rss-parser": "^3.9.0",
     "rxjs": "~6.6.3",
     "stream": "^0.0.2",
     "timers": "^0.1.1",
