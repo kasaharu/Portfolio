@@ -1,3 +1,14 @@
+export interface Feed {
+  items: BlogItem[];
+}
+
+export interface BlogItem {
+  title: string;
+  categories: string[];
+  link: string;
+  publishDate: string;
+}
+
 export interface RssFeed {
   rss: {
     channel: [
