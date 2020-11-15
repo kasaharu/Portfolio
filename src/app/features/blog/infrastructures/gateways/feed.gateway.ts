@@ -1,21 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-
-interface RssResponse {
-  rss: {
-    channel: [
-      {
-        description: string[];
-        docs: string[];
-        generator: string[];
-        item: [{ category: string[]; link: string[]; pubDate: string[]; title: string[] }];
-        lastBuildDate: string[];
-        link: string[];
-        title: string[];
-      },
-    ];
-  };
-}
+import { Observable } from 'rxjs';
+import { RssFeed } from '../../domain/feed';
 
 @Injectable({
   providedIn: 'root',
@@ -23,11 +9,11 @@ interface RssResponse {
 export class FeedGateway {
   constructor(private readonly http: HttpClient) {}
 
-  getRssResponse() {
+  getRssResponse(): Observable<RssFeed> {
     const requestOptions: Object = {
       observe: 'body',
       responseType: 'text',
     };
-    this.http.get<RssResponse>('https://kasaharu.hatenablog.com/rss', requestOptions).toPromise();
+    return this.http.get<RssFeed>('https://kasaharu.hatenablog.com/rss', requestOptions);
   }
 }
