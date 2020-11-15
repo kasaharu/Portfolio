@@ -4,9 +4,7 @@ import { FeedStore } from '../containers/feed/feed.store';
 import { FeedValueObject, RssFeed } from '../domain/feed';
 import { FeedGateway } from '../infrastructures/gateways/feed.gateway';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class FeedUsecase {
   constructor(private readonly componentStore: FeedStore, private readonly feedGateway: FeedGateway) {}
 

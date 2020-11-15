@@ -1,1 +1,5 @@
-<p>feed works!</p>
+<ng-container *ngIf="blogItems$ | async as blogItems">
+  <ng-container *ngFor="let blogItem of blogItems">
+    <div>{{ blogItem.title }}</div>
+  </ng-container>
+</ng-container>
