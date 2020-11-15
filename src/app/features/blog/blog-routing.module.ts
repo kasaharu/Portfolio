@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BlogComponent } from './pages/blog/blog.component';
+import { BlogPageComponent } from './pages/blog/blog.component';
 
-const routes: Routes = [{ path: '', component: BlogComponent, pathMatch: 'full' }];
+const routes: Routes = [{ path: '', component: BlogPageComponent, pathMatch: 'full' }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
