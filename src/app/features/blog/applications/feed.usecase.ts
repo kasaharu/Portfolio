@@ -1,8 +1,20 @@
 import { Injectable } from '@angular/core';
+import XMLParser from 'xml2js';
+import { FeedStore } from '../containers/feed/feed.store';
+import { FeedValueObject, RssFeed } from '../domain/feed';
+import { FeedGateway } from '../infrastructures/gateways/feed.gateway';
 
 @Injectable({
   providedIn: 'root',
 })
 export class FeedUsecase {
-  constructor() {}
+  constructor(private readonly componentStore: FeedStore, private readonly feedGateway: FeedGateway) {}
+
+  async fetchFeed() {
+    const rssFeed = await this.feedGateway.getRssResponse().toPromise();
+    const parsed: RssFeed = await XMLParser.parseStringPromise(rssFeed);
+    const feedValueObject = FeedValueObject.createFromRssResponse(parsed);
+
+    this.componentStore.setFeed(feedValueObject.plainObject());
+  }
 }
