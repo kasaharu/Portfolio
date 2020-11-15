@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Blog } from '../../domain/blog';
 
 @Component({
   selector: 'app-blogs',
@@ -6,11 +7,11 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   styleUrls: ['./blogs.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BlogsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class BlogsComponent {
+  constructor() {}
+  readonly blogs: Blog[] = [
+    { name: 'はてなブログ', url: 'https://kasaharu.hatenablog.com/' },
+    { name: 'Medium', url: 'https://medium.com/@kasaharu' },
+    { name: 'Qiita', url: 'https://qiita.com/kasaharu' },
+  ];
 }
