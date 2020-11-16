@@ -10,7 +10,7 @@ export class FeedGateway {
   constructor(private readonly http: HttpClient) {}
 
   getRssResponse(): Observable<RssFeed> {
-    const requestOptions: Object = {
+    const requestOptions: object = {
       observe: 'body',
       responseType: 'text',
     };
