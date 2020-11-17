@@ -1,3 +1,5 @@
+<app-page-title [title]="'Feed'"></app-page-title>
+
 <ng-container *ngIf="blogItems$ | async as blogItems">
   <ng-container *ngFor="let blogItem of blogItems">
     <div>{{ blogItem.title }}</div>
