@@ -5,9 +5,10 @@ import { BlogRoutingModule } from './blog-routing.module';
 import { FeedComponent } from './containers/feed/feed.component';
 import { BlogPageComponent } from './pages/blog/blog.component';
 import { BlogsComponent } from './ui/blogs/blogs.component';
+import { FeedItemComponent } from './ui/feed-item/feed-item.component';
 
 @NgModule({
-  declarations: [BlogPageComponent, BlogsComponent, FeedComponent],
+  declarations: [BlogPageComponent, BlogsComponent, FeedComponent, FeedItemComponent],
   imports: [CommonModule, SharedModule, BlogRoutingModule],
 })
 export class BlogModule {}
