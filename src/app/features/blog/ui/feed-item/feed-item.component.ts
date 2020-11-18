@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { BlogItem } from '../../domain/feed';
 
 @Component({
   selector: 'app-feed-item',
@@ -8,6 +9,9 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 })
 export class FeedItemComponent implements OnInit {
   constructor() {}
+
+  @Input()
+  feedItem!: BlogItem;
 
   ngOnInit(): void {}
 }

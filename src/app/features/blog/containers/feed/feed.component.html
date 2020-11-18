@@ -2,6 +2,6 @@
 
 <ng-container *ngIf="blogItems$ | async as blogItems">
   <ng-container *ngFor="let blogItem of blogItems">
-    <div>{{ blogItem.title }}</div>
+    <app-feed-item [feedItem]="blogItem"></app-feed-item>
   </ng-container>
 </ng-container>
