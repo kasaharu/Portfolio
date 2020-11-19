@@ -1,7 +1,7 @@
 <app-page-title [title]="'Feed'"></app-page-title>
 
-<ng-container *ngIf="blogItems$ | async as blogItems">
+<div class="feed-wrapper" *ngIf="blogItems$ | async as blogItems">
   <ng-container *ngFor="let blogItem of blogItems">
     <app-feed-item [feedItem]="blogItem"></app-feed-item>
   </ng-container>
-</ng-container>
+</div>
