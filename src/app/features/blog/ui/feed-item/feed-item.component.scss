@@ -1,3 +1,5 @@
+@import '../../../../../assets/styles/properties';
+
 .blog-item {
   min-height: 60px;
   font-size: 20px;
@@ -30,4 +32,11 @@
   box-sizing: border-box;
   padding: 4px;
   margin: 8px;
+}
+
+@media screen and (max-width: $p-breakpoint-xsmall) {
+  .blog-item {
+    min-height: 48px;
+    font-size: 12px;
+  }
 }
