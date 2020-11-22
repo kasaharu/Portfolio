@@ -1,5 +1,7 @@
 <app-page-title [title]="'Feed'"></app-page-title>
 
+<p>はてなブログに投稿された最新の 10 件を表示</p>
+
 <div class="feed-wrapper" *ngIf="blogItems$ | async as blogItems">
   <ng-container *ngFor="let blogItem of blogItems">
     <app-feed-item [feedItem]="blogItem"></app-feed-item>
