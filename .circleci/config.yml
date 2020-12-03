@@ -3,7 +3,7 @@ version: 2.1
 executors:
   frontend-executor:
     docker:
-      - image: circleci/node:12.19-stretch-browsers
+      - image: circleci/node:14.15-stretch-browsers
 
 references:
   cache_key: &cache_key v2-dependencies-{{ checksum "yarn.lock" }}
