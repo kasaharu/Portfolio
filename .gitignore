@@ -49,3 +49,7 @@ Thumbs.db
 
 # Deploy
 .firebase/
+
+# E2E testing (Cypress)
+cypress/screenshots/
+cypress/videos/
