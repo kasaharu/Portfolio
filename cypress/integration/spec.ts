@@ -1,4 +1,4 @@
 it('loads examples', () => {
   cy.visit('/');
-  cy.contains('Replace me with something relevant');
+  cy.get('app-root app-header header #headerTitle').should('contain', 'kasaharu.web');
 });
