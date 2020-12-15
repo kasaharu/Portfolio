@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-page-title',
@@ -6,10 +6,7 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
   styleUrls: ['./page-title.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PageTitleComponent implements OnInit {
-  constructor() {}
+export class PageTitleComponent {
   @Input()
   title = '';
-
-  ngOnInit() {}
 }

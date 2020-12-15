@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { contents } from '../../data/content';
 
 @Component({
@@ -7,9 +7,6 @@ import { contents } from '../../data/content';
   styleUrls: ['./lab.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LabComponent implements OnInit {
-  constructor() {}
+export class LabComponent {
   labsContents = contents;
-
-  ngOnInit() {}
 }

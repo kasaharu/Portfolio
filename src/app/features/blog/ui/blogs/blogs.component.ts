@@ -8,7 +8,6 @@ import { Blog } from '../../domain/blog';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BlogsComponent {
-  constructor() {}
   readonly blogs: Blog[] = [
     { name: 'はてなブログ', url: 'https://kasaharu.hatenablog.com/' },
     { name: 'Medium', url: 'https://medium.com/@kasaharu' },

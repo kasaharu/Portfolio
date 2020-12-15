@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
@@ -7,7 +7,7 @@ import { NavigationEnd, Router } from '@angular/router';
   styleUrls: ['./activity.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ActivityComponent implements OnInit {
+export class ActivityComponent {
   constructor(private readonly router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
@@ -22,6 +22,4 @@ export class ActivityComponent implements OnInit {
     { key: 'oss', lable: 'OSS' },
   ];
   activeLink!: string;
-
-  ngOnInit() {}
 }

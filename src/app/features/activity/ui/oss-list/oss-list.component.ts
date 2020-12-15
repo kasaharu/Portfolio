@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ossList } from '../../data/oss';
 import { Oss } from '../../domain/models';
 
@@ -8,10 +8,7 @@ import { Oss } from '../../domain/models';
   styleUrls: ['./oss-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class OssListComponent implements OnInit {
-  constructor() {}
+export class OssListComponent {
   ossList: Oss[] = ossList;
   displayedColumns = ['date', 'repository'];
-
-  ngOnInit() {}
 }

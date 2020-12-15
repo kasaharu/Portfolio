@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -6,8 +6,7 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
   styleUrls: ['./card.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CardComponent implements OnInit {
-  constructor() {}
+export class CardComponent {
   @Input()
   title = '';
   @Input()
@@ -16,6 +15,4 @@ export class CardComponent implements OnInit {
   repositoryName = '';
   @Input()
   repositoryUrl = '';
-
-  ngOnInit() {}
 }

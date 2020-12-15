@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { BlogItem } from '../../domain/feed';
 
 @Component({
@@ -7,11 +7,7 @@ import { BlogItem } from '../../domain/feed';
   styleUrls: ['./feed-item.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class FeedItemComponent implements OnInit {
-  constructor() {}
-
+export class FeedItemComponent {
   @Input()
   feedItem!: BlogItem;
-
-  ngOnInit(): void {}
 }
