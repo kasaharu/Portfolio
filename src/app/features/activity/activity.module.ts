@@ -4,12 +4,12 @@ import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { SharedModule } from '../../shared/shared.module';
 import { ActivityRoutingModule } from './activity-routing.module';
-import { ActivityComponent } from './pages/activity/activity.component';
+import { ActivityPageComponent } from './pages/activity/activity.component';
 import { OssListComponent } from './pages/oss-list/oss-list.component';
 import { SlideComponent } from './pages/slide/slide.component';
 
 @NgModule({
-  declarations: [ActivityComponent, OssListComponent, SlideComponent],
+  declarations: [ActivityPageComponent, OssListComponent, SlideComponent],
   imports: [CommonModule, SharedModule, ActivityRoutingModule, MatTableModule, MatTabsModule],
 })
 export class ActivityModule {}

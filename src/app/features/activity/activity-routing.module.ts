@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ActivityComponent } from './pages/activity/activity.component';
+import { ActivityPageComponent } from './pages/activity/activity.component';
 import { OssListComponent } from './pages/oss-list/oss-list.component';
 import { SlideComponent } from './pages/slide/slide.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ActivityComponent,
+    component: ActivityPageComponent,
     children: [
       { path: '', redirectTo: 'slide', pathMatch: 'full' },
       { path: 'slide', component: SlideComponent },

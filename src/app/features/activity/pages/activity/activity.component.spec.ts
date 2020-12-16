@@ -1,23 +1,23 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { PageTitleComponent } from '../../../../shared/ui/page-title/page-title.component';
-import { ActivityComponent } from './activity.component';
+import { ActivityPageComponent } from './activity.component';
 
-describe('ActivityComponent', () => {
-  let component: ActivityComponent;
-  let fixture: ComponentFixture<ActivityComponent>;
+describe('ActivityPageComponent', () => {
+  let component: ActivityPageComponent;
+  let fixture: ComponentFixture<ActivityPageComponent>;
 
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        declarations: [ActivityComponent, PageTitleComponent],
+        declarations: [ActivityPageComponent, PageTitleComponent],
         imports: [RouterTestingModule],
       }).compileComponents();
     }),
   );
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ActivityComponent);
+    fixture = TestBed.createComponent(ActivityPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
