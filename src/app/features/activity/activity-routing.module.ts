@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ActivityComponent } from './ui/activity/activity.component';
-import { OssListComponent } from './ui/oss-list/oss-list.component';
-import { SlideComponent } from './ui/slide/slide.component';
+import { ActivityComponent } from './pages/activity/activity.component';
+import { OssListComponent } from './pages/oss-list/oss-list.component';
+import { SlideComponent } from './pages/slide/slide.component';
 
 const routes: Routes = [
   {
