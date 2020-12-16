@@ -1,21 +1,21 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { PageTitleComponent } from '../../../../shared/ui/page-title/page-title.component';
-import { TopComponent } from './top.component';
+import { TopPageComponent } from './top.component';
 
-describe('TopComponent', () => {
-  let component: TopComponent;
-  let fixture: ComponentFixture<TopComponent>;
+describe('TopPageComponent', () => {
+  let component: TopPageComponent;
+  let fixture: ComponentFixture<TopPageComponent>;
 
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        declarations: [TopComponent, PageTitleComponent],
+        declarations: [TopPageComponent, PageTitleComponent],
       }).compileComponents();
     }),
   );
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TopComponent);
+    fixture = TestBed.createComponent(TopPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

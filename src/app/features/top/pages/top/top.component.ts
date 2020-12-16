@@ -7,7 +7,7 @@ import { snsList } from '../../data/sns';
   styleUrls: ['./top.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TopComponent {
+export class TopPageComponent {
   readonly name = 'kasaharu (Wataru KASAHARA)';
   readonly myInfoList: string[] = ['Web Frontend Engineer', 'Angular Japan User Group Staff'];
   readonly snsList = snsList;
