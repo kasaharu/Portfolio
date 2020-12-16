@@ -7,6 +7,6 @@ import { contents } from '../../data/content';
   styleUrls: ['./lab.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LabComponent {
+export class LabPageComponent {
   labsContents = contents;
 }

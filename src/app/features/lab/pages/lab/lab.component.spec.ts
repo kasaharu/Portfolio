@@ -1,22 +1,22 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { SharedModule } from '../../../../shared/shared.module';
-import { LabComponent } from './lab.component';
+import { LabPageComponent } from './lab.component';
 
 describe('LabComponent', () => {
-  let component: LabComponent;
-  let fixture: ComponentFixture<LabComponent>;
+  let component: LabPageComponent;
+  let fixture: ComponentFixture<LabPageComponent>;
 
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        declarations: [LabComponent],
+        declarations: [LabPageComponent],
         imports: [SharedModule],
       }).compileComponents();
     }),
   );
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LabComponent);
+    fixture = TestBed.createComponent(LabPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

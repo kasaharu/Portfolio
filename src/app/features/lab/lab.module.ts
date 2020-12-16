@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { SharedModule } from '../../shared/shared.module';
-import { LabComponent } from './pages/lab/lab.component';
+import { LabPageComponent } from './pages/lab/lab.component';
 
 @NgModule({
-  declarations: [LabComponent],
+  declarations: [LabPageComponent],
   imports: [CommonModule, SharedModule],
 })
 export class LabModule {}
