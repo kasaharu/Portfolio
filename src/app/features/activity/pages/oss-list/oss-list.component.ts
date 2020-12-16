@@ -8,7 +8,7 @@ import { Oss } from '../../domain/models';
   styleUrls: ['./oss-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class OssListComponent {
+export class OssListPageComponent {
   ossList: Oss[] = ossList;
   displayedColumns = ['date', 'repository'];
 }

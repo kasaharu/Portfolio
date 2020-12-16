@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ActivityPageComponent } from './pages/activity/activity.component';
-import { OssListComponent } from './pages/oss-list/oss-list.component';
+import { OssListPageComponent } from './pages/oss-list/oss-list.component';
 import { SlideComponent } from './pages/slide/slide.component';
 
 const routes: Routes = [
@@ -11,7 +11,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'slide', pathMatch: 'full' },
       { path: 'slide', component: SlideComponent },
-      { path: 'oss', component: OssListComponent },
+      { path: 'oss', component: OssListPageComponent },
     ],
   },
 ];

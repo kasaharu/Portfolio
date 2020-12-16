@@ -1,21 +1,21 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { PageTitleComponent } from '../../../../shared/ui/page-title/page-title.component';
-import { OssListComponent } from './oss-list.component';
+import { OssListPageComponent } from './oss-list.component';
 
-describe('OssListComponent', () => {
-  let component: OssListComponent;
-  let fixture: ComponentFixture<OssListComponent>;
+describe('OssListPageComponent', () => {
+  let component: OssListPageComponent;
+  let fixture: ComponentFixture<OssListPageComponent>;
 
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        declarations: [OssListComponent, PageTitleComponent],
+        declarations: [OssListPageComponent, PageTitleComponent],
       }).compileComponents();
     }),
   );
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OssListComponent);
+    fixture = TestBed.createComponent(OssListPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
