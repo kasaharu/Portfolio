@@ -7,7 +7,7 @@ import { slideList } from '../../data/slide';
   styleUrls: ['./slide.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SlideComponent {
+export class SlidePageComponent {
   readonly slideList = slideList;
   displayedColumns = ['date', 'slide', 'event'];
 }

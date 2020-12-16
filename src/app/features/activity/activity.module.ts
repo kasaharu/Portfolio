@@ -6,10 +6,10 @@ import { SharedModule } from '../../shared/shared.module';
 import { ActivityRoutingModule } from './activity-routing.module';
 import { ActivityPageComponent } from './pages/activity/activity.component';
 import { OssListPageComponent } from './pages/oss-list/oss-list.component';
-import { SlideComponent } from './pages/slide/slide.component';
+import { SlidePageComponent } from './pages/slide/slide.component';
 
 @NgModule({
-  declarations: [ActivityPageComponent, OssListPageComponent, SlideComponent],
+  declarations: [ActivityPageComponent, OssListPageComponent, SlidePageComponent],
   imports: [CommonModule, SharedModule, ActivityRoutingModule, MatTableModule, MatTabsModule],
 })
 export class ActivityModule {}
