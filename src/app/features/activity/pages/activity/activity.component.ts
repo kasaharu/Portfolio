@@ -11,7 +11,7 @@ export class ActivityPageComponent {
   constructor(private readonly router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        const splitedUrl = event.url.split('/');
+        const splitedUrl = event.urlAfterRedirects.split('/');
         this.activeLink = splitedUrl[splitedUrl.length - 1];
       }
     });
