@@ -9,12 +9,11 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { LabModule } from './features/lab/lab.module';
 import { TopPageComponent } from './features/top/pages/top/top.component';
-import { FooterModule } from './shared/footer/footer.module';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [AppComponent, TopPageComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FooterModule, LabModule, CoreModule, SharedModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, LabModule, CoreModule, SharedModule, BrowserAnimationsModule],
   providers: [
     { provide: ErrorHandler, useValue: Sentry.createErrorHandler({ showDialog: true }) },
     { provide: Sentry.TraceService, deps: [Router] },
