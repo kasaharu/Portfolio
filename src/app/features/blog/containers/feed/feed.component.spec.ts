@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { PageTitleComponent } from '../../../../shared/ui/page-title/page-title.component';
 import { FeedComponent } from './feed.component';
 
 describe('FeedComponent', () => {
@@ -8,7 +8,7 @@ describe('FeedComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [FeedComponent],
+      declarations: [FeedComponent, PageTitleComponent],
     }).compileComponents();
   });
 

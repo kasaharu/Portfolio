@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatTableModule } from '@angular/material/table';
 import { SlidePageComponent } from './slide.component';
 
 describe('SlidePageComponent', () => {
@@ -8,6 +9,7 @@ describe('SlidePageComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [SlidePageComponent],
+      imports: [MatTableModule],
     }).compileComponents();
   });
 
