@@ -3,15 +3,15 @@ import { APP_INITIALIZER, ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Router } from '@angular/router';
+import { InspectorModule } from '@ngneat/inspector';
 import * as Sentry from '@sentry/angular';
+import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { LabModule } from './features/lab/lab.module';
 import { TopPageComponent } from './features/top/pages/top/top.component';
 import { SharedModule } from './shared/shared.module';
-import { InspectorModule } from '@ngneat/inspector';
-import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent, TopPageComponent],
