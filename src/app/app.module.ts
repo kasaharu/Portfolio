@@ -10,10 +10,12 @@ import { CoreModule } from './core/core.module';
 import { LabModule } from './features/lab/lab.module';
 import { TopPageComponent } from './features/top/pages/top/top.component';
 import { SharedModule } from './shared/shared.module';
+import { InspectorModule } from '@ngneat/inspector';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent, TopPageComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, LabModule, CoreModule, SharedModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, LabModule, CoreModule, SharedModule, BrowserAnimationsModule, environment.production ? [] : InspectorModule.forRoot()],
   providers: [
     { provide: ErrorHandler, useValue: Sentry.createErrorHandler({ showDialog: true }) },
     { provide: Sentry.TraceService, deps: [Router] },
