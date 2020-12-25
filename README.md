@@ -9,6 +9,8 @@
 
 ## 技術スタック
 
-- Angular
-- Scully
+- Angular / TypeScript
+- Jasmine / Karma
+- Cypress
+- Sentry
 - Firebase hosting
