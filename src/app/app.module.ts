@@ -23,7 +23,7 @@ import { environment } from '../environments/environment';
     CoreModule,
     SharedModule,
     BrowserAnimationsModule,
-    environment.production ? [] : InspectorModule.forRoot(),
+    environment.production ? [] : InspectorModule.forRoot({ position: { top: 'auto', bottom: '20px' } }),
   ],
   providers: [
     { provide: ErrorHandler, useValue: Sentry.createErrorHandler({ showDialog: true }) },
