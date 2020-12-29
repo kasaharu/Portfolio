@@ -18,7 +18,9 @@
     },
     {
       "packagePatterns": [
-        "prettier"
+        "prettier",
+        "xml2js",
+        "timers"
       ],
       "enabled": true
     },
