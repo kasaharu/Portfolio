@@ -1,7 +1,27 @@
+@import '../../../../../assets/styles/properties';
+
 .contents {
-  margin-left: 48px;
+  display: flex;
+}
+
+.information {
+  padding-left: 48px;
+  list-style: none;
 }
 
 .list-item:not(:last-child) {
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: $p-breakpoint-xsmall) {
+  .contents {
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .information {
+    padding-left: 24px;
+  }
 }

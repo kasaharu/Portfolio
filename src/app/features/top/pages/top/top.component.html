@@ -1,8 +1,12 @@
 <app-page-title [title]="name"></app-page-title>
 
-<ul class="contents">
-  <li class="list-item" *ngFor="let myInfo of myInfoList">{{ myInfo }}</li>
-  <li class="list-item" *ngFor="let sns of snsList">
-    <a appExternalLink href="{{ sns.url }}">{{ sns.serviceName }}</a>
-  </li>
-</ul>
+<div class="contents">
+  <img src="assets/images/profile.jpg" width="200" alt="" />
+
+  <ul class="information">
+    <li class="list-item" *ngFor="let myInfo of myInfoList">{{ myInfo }}</li>
+    <li class="list-item" *ngFor="let sns of snsList">
+      <a appExternalLink href="{{ sns.url }}">{{ sns.serviceName }}</a>
+    </li>
+  </ul>
+</div>
