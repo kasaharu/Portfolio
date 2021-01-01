@@ -5,11 +5,11 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { SharedModule } from '../../shared/shared.module';
 import { ActivityRoutingModule } from './activity-routing.module';
 import { ActivityPageComponent } from './pages/activity/activity.component';
-import { OssListPageComponent } from './pages/oss-list/oss-list.component';
+import { OssPageComponent } from './pages/oss/oss.component';
 import { SlidePageComponent } from './pages/slide/slide.component';
 
 @NgModule({
-  declarations: [ActivityPageComponent, OssListPageComponent, SlidePageComponent],
+  declarations: [ActivityPageComponent, OssPageComponent, SlidePageComponent],
   imports: [CommonModule, SharedModule, ActivityRoutingModule, MatTableModule, MatTabsModule],
 })
 export class ActivityModule {}
