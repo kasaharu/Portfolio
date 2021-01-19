@@ -1,6 +1,6 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 import { FeedStore } from '../containers/feed/feed.store';
-
 import { FeedUsecase } from './feed.usecase';
 
 describe('FeedUsecase', () => {
@@ -8,6 +8,7 @@ describe('FeedUsecase', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule],
       providers: [FeedUsecase, FeedStore],
     });
     usecase = TestBed.inject(FeedUsecase);
