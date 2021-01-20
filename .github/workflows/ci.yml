@@ -85,7 +85,7 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-yarn-
       - name: test
-        run: yarn test:ci
+        run: yarn test
         env:
           CI: true
       - name: Archive code coverage results
