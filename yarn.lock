@@ -1980,10 +1980,10 @@
   resolved "https://registry.yarnpkg.com/@jsdevtools/ono/-/ono-7.1.3.tgz#9df03bbd7c696a5c58885c34aa06da41c8543796"
   integrity sha512-4JQNk+3mVzK3xh2rqd6RB4J46qUR19azEHBneZyTZM+c456qOrbbM/5xcR8huNCCcbVt7+UmizG6GuUvPvKUYg==
 
-"@kasaharu/ng-workbox@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@kasaharu/ng-workbox/-/ng-workbox-0.3.0.tgz#73552b8d5bf8e3ad401745c05b32fe8392d18922"
-  integrity sha512-0qH/fbv6JoLjmhtf07if0kkmIMTXWIEVf6RyUCRR8lEFJUE1J5f2BsZXXQ+vfBBqgyhWEgP7Qr3jtWh4Ji4RNA==
+"@kasaharu/ng-workbox@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@kasaharu/ng-workbox/-/ng-workbox-0.4.2.tgz#88164ac5e16e6b3a4dafb508daf88598a8598df0"
+  integrity sha512-ZP4iwwcgIDLRPXu9zY6vDMMgonBJLZrDZOnQv7QGBz3dERJxfvQhOrThYMOLixDM2lwnv+yBjGJOTiL+L/6z3Q==
   dependencies:
     tslib "^2.0.0"
 
