@@ -9,17 +9,14 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { TopPageComponent } from './features/top/pages/top/top.component';
-import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-  declarations: [AppComponent, TopPageComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     CoreModule,
-    SharedModule,
     BrowserAnimationsModule,
     environment.production ? [] : InspectorModule.forRoot({ position: { top: 'auto', bottom: '20px' } }),
   ],
