@@ -11,9 +11,6 @@
     "arrow-parens": false,
     "arrow-return-shorthand": true,
     "curly": true,
-    "deprecation": {
-      "severity": "warning"
-    },
     "component-class-suffix": true,
     "contextual-lifecycle": true,
     "cyclomatic-complexity": [
@@ -70,7 +67,6 @@
         ]
       }
     ],
-    "no-boolean-literal-compare": true,
     "no-consecutive-blank-lines": true,
     "no-console": [
       true,
