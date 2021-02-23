@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { CardModule } from '../../../../shared/card/card.module';
+import { PageTitleModule } from '../../../../shared/page-title/page-title.module';
 import { LabPageComponent } from './lab.component';
 
 describe('LabComponent', () => {
@@ -9,7 +11,7 @@ describe('LabComponent', () => {
     waitForAsync(() => {
       TestBed.configureTestingModule({
         declarations: [LabPageComponent],
-        imports: [],
+        imports: [PageTitleModule, CardModule],
       }).compileComponents();
     }),
   );

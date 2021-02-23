@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ExternalLinkModule } from '../../../../shared/external-link/external-link.module';
+import { PageTitleModule } from '../../../../shared/page-title/page-title.module';
 import { TopComponent } from './top.component';
 
 describe('TopComponent', () => {
@@ -8,9 +9,9 @@ describe('TopComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TopComponent ],
-    })
-    .compileComponents();
+      declarations: [TopComponent],
+      imports: [PageTitleModule, ExternalLinkModule],
+    }).compileComponents();
   });
 
   beforeEach(() => {
