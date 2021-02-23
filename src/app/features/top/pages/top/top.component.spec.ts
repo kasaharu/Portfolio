@@ -1,5 +1,5 @@
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { PageTitleComponent } from '../../../../shared/ui/page-title/page-title.component';
 import { TopPageComponent } from './top.component';
 
 describe('TopPageComponent', () => {
@@ -9,7 +9,8 @@ describe('TopPageComponent', () => {
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        declarations: [TopPageComponent, PageTitleComponent],
+        declarations: [TopPageComponent],
+        schemas: [NO_ERRORS_SCHEMA],
       }).compileComponents();
     }),
   );
