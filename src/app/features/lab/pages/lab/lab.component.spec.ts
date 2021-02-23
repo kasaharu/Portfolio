@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { SharedModule } from '../../../../shared/shared.module';
 import { LabPageComponent } from './lab.component';
 
 describe('LabComponent', () => {
@@ -10,7 +9,7 @@ describe('LabComponent', () => {
     waitForAsync(() => {
       TestBed.configureTestingModule({
         declarations: [LabPageComponent],
-        imports: [SharedModule],
+        imports: [],
       }).compileComponents();
     }),
   );
