@@ -51,7 +51,7 @@
     "@ngneat/inspector": "^1.1.0",
     "@types/jest": "26.0.20",
     "@types/node": "^12.12.14",
-    "@types/xml2js": "0.4.5",
+    "@types/xml2js": "0.4.8",
     "codelyzer": "^6.0.0",
     "cypress": "^6.1.0",
     "firebase-tools": "^8.0.0",
