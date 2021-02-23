@@ -28,7 +28,7 @@
     "@angular/router": "~11.2.2",
     "@briebug/jest-schematic": "^3.1.0",
     "@kasaharu/ng-workbox": "^0.4.2",
-    "@ngrx/component-store": "^11.0.0",
+    "@ngrx/component-store": "^11.0.1",
     "@sentry/angular": "^5.29.1",
     "@sentry/tracing": "^5.29.1",
     "firebase": "^7.0 || ^8.0",
