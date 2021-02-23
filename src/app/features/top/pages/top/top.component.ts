@@ -1,13 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { snsList } from '../../data/sns';
 
 @Component({
-  templateUrl: './top.component.html',
-  styleUrls: ['./top.component.scss'],
+  template: `<app-top></app-top>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TopPageComponent {
-  readonly name = 'kasaharu (Wataru KASAHARA)';
-  readonly myInfoList: string[] = ['Web Frontend Engineer', 'Angular Japan User Group Staff'];
-  readonly snsList = snsList;
-}
+export class TopPageComponent {}
