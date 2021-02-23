@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { PageTitleComponent } from '../../../../shared/ui/page-title/page-title.component';
+import { PageTitleModule } from '../../../../shared/page-title/page-title.module';
 import { BlogsComponent } from './blogs.component';
 
 describe('BlogsComponent', () => {
@@ -8,7 +8,8 @@ describe('BlogsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [BlogsComponent, PageTitleComponent],
+      declarations: [BlogsComponent],
+      imports: [PageTitleModule],
     }).compileComponents();
   });
 

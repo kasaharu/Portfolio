@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { MatTabsModule } from '@angular/material/tabs';
 import { RouterTestingModule } from '@angular/router/testing';
-import { PageTitleComponent } from '../../../../shared/ui/page-title/page-title.component';
+import { PageTitleModule } from '../../../../shared/page-title/page-title.module';
 import { ActivityPageComponent } from './activity.component';
 
 describe('ActivityPageComponent', () => {
@@ -11,8 +11,8 @@ describe('ActivityPageComponent', () => {
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        declarations: [ActivityPageComponent, PageTitleComponent],
-        imports: [RouterTestingModule, MatTabsModule],
+        declarations: [ActivityPageComponent],
+        imports: [RouterTestingModule, MatTabsModule, PageTitleModule],
       }).compileComponents();
     }),
   );

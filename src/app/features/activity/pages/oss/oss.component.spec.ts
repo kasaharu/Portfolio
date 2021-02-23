@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { MatTableModule } from '@angular/material/table';
-import { PageTitleComponent } from '../../../../shared/ui/page-title/page-title.component';
+import { PageTitleModule } from '../../../../shared/page-title/page-title.module';
 import { OssPageComponent } from './oss.component';
 
 describe('OssListPageComponent', () => {
@@ -10,8 +10,8 @@ describe('OssListPageComponent', () => {
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        declarations: [OssPageComponent, PageTitleComponent],
-        imports: [MatTableModule],
+        declarations: [OssPageComponent],
+        imports: [MatTableModule, PageTitleModule],
       }).compileComponents();
     }),
   );
