@@ -1,10 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { ExternalLinkDirective } from './ui/directives/external-link.directive';
 
 @NgModule({
-  declarations: [ExternalLinkDirective],
+  declarations: [],
   imports: [CommonModule],
-  exports: [ExternalLinkDirective],
+  exports: [],
 })
 export class SharedModule {}
