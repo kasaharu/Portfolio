@@ -3,13 +3,13 @@ import { ArticleUsecase } from '../../applications/article.usecase';
 import { ArticleStore } from './article.store';
 
 @Component({
-  selector: 'app-article',
-  templateUrl: './article.component.html',
-  styleUrls: ['./article.component.scss'],
+  selector: 'app-articles',
+  templateUrl: './articles.component.html',
+  styleUrls: ['./articles.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [ArticleStore, ArticleUsecase],
 })
-export class ArticleComponent implements OnInit {
+export class ArticlesComponent implements OnInit {
   constructor(private readonly _componentStore: ArticleStore, private _usecase: ArticleUsecase) {}
   articles$ = this._componentStore.blogItems$;
 

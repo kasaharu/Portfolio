@@ -1,6 +1,6 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
-import { ArticleStore } from '../containers/article/article.store';
+import { ArticleStore } from '../containers/articles/article.store';
 import { ArticleUsecase } from './article.usecase';
 
 describe('ArticleUsecase', () => {
