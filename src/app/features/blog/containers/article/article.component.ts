@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { FeedUsecase } from '../../applications/feed.usecase';
+import { ArticleUsecase } from '../../applications/article.usecase';
 import { FeedStore } from './article.store';
 
 @Component({
@@ -7,10 +7,10 @@ import { FeedStore } from './article.store';
   templateUrl: './article.component.html',
   styleUrls: ['./article.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [FeedStore, FeedUsecase],
+  providers: [FeedStore, ArticleUsecase],
 })
 export class ArticleComponent implements OnInit {
-  constructor(private readonly _componentStore: FeedStore, private _usecase: FeedUsecase) {}
+  constructor(private readonly _componentStore: FeedStore, private _usecase: ArticleUsecase) {}
   articles$ = this._componentStore.blogItems$;
 
   ngOnInit(): void {

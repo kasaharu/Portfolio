@@ -5,7 +5,7 @@ import { FeedValueObject, RssFeed } from '../domain/feed';
 import { FeedGateway } from '../infrastructures/gateways/feed.gateway';
 
 @Injectable()
-export class FeedUsecase {
+export class ArticleUsecase {
   constructor(private readonly componentStore: FeedStore, private readonly feedGateway: FeedGateway) {}
 
   async fetchFeed() {

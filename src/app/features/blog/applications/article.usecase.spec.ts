@@ -1,17 +1,17 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 import { FeedStore } from '../containers/article/article.store';
-import { FeedUsecase } from './feed.usecase';
+import { ArticleUsecase } from './article.usecase';
 
-describe('FeedUsecase', () => {
-  let usecase: FeedUsecase;
+describe('ArticleUsecase', () => {
+  let usecase: ArticleUsecase;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      providers: [FeedUsecase, FeedStore],
+      providers: [ArticleUsecase, FeedStore],
     });
-    usecase = TestBed.inject(FeedUsecase);
+    usecase = TestBed.inject(ArticleUsecase);
   });
 
   it('should be created', () => {
