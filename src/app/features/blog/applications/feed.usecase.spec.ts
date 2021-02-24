@@ -1,6 +1,6 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
-import { FeedStore } from '../containers/feed/feed.store';
+import { FeedStore } from '../containers/article/article.store';
 import { FeedUsecase } from './feed.usecase';
 
 describe('FeedUsecase', () => {

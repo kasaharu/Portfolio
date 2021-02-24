@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { FeedUsecase } from '../../applications/feed.usecase';
-import { FeedStore } from '../feed/feed.store';
+import { FeedStore } from './article.store';
 
 @Component({
   selector: 'app-article',

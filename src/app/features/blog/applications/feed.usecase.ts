@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import XMLParser from 'xml2js';
-import { FeedStore } from '../containers/feed/feed.store';
+import { FeedStore } from '../containers/article/article.store';
 import { FeedValueObject, RssFeed } from '../domain/feed';
 import { FeedGateway } from '../infrastructures/gateways/feed.gateway';
 
