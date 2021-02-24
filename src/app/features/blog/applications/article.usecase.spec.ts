@@ -1,6 +1,6 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
-import { FeedStore } from '../containers/article/article.store';
+import { ArticleStore } from '../containers/article/article.store';
 import { ArticleUsecase } from './article.usecase';
 
 describe('ArticleUsecase', () => {
@@ -9,7 +9,7 @@ describe('ArticleUsecase', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      providers: [ArticleUsecase, FeedStore],
+      providers: [ArticleUsecase, ArticleStore],
     });
     usecase = TestBed.inject(ArticleUsecase);
   });
