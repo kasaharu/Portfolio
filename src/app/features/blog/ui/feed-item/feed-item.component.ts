@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { BlogItem } from '../../domain/feed';
+import { Article } from '../../domain/feed';
 
 @Component({
   selector: 'app-feed-item',
@@ -9,5 +9,5 @@ import { BlogItem } from '../../domain/feed';
 })
 export class FeedItemComponent {
   @Input()
-  feedItem!: BlogItem;
+  feedItem!: Article;
 }

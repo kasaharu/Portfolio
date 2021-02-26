@@ -1,8 +1,8 @@
 export interface Feed {
-  items: BlogItem[];
+  items: Article[];
 }
 
-export interface BlogItem {
+export interface Article {
   title: string;
   categories: string[];
   link: string;
@@ -26,10 +26,10 @@ export interface RssFeed {
 }
 
 export class FeedValueObject implements Feed {
-  private constructor(items: BlogItem[]) {
+  private constructor(items: Article[]) {
     this.items = items;
   }
-  readonly items: BlogItem[];
+  readonly items: Article[];
 
   static createFromRssResponse(rssResponse: RssFeed): FeedValueObject {
     const blogItems: any = rssResponse.rss.channel[0].item.map((item) => {
