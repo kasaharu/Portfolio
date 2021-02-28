@@ -2,10 +2,10 @@ import { Component, DebugElement } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { Article } from '../../domain/feed';
-import { FeedItemComponent } from './feed-item.component';
+import { ArticleComponent } from './article.component';
 
 @Component({
-  template: `<app-feed-item [feedItem]="item"></app-feed-item>`,
+  template: `<app-article [feedItem]="item"></app-article>`,
 })
 class TestHostComponent {
   item: Article = { title: 'テストブログ', categories: [], link: '', publishDate: '' };
@@ -17,13 +17,13 @@ describe('FeedItemComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [FeedItemComponent, TestHostComponent],
+      declarations: [ArticleComponent, TestHostComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(TestHostComponent);
-    feedItemElement = fixture.debugElement.query(By.css('app-feed-item')).nativeElement;
+    feedItemElement = fixture.debugElement.query(By.css('app-article')).nativeElement;
     fixture.detectChanges();
   });
 

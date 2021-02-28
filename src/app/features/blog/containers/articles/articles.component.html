@@ -4,6 +4,6 @@
 
 <div class="feed-wrapper" *ngIf="articles$ | async as articles">
   <ng-container *ngFor="let article of articles">
-    <app-feed-item [feedItem]="article"></app-feed-item>
+    <app-article [feedItem]="article"></app-article>
   </ng-container>
 </div>
