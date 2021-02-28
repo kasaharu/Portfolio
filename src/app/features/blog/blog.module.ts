@@ -6,10 +6,9 @@ import { BlogRoutingModule } from './blog-routing.module';
 import { ArticlesComponent } from './containers/articles/articles.component';
 import { BlogPageComponent } from './pages/blog/blog.component';
 import { ArticleComponent } from './ui/article/article.component';
-import { BlogsComponent } from './ui/blogs/blogs.component';
 
 @NgModule({
-  declarations: [BlogPageComponent, BlogsComponent, ArticleComponent, ArticlesComponent],
+  declarations: [BlogPageComponent, ArticleComponent, ArticlesComponent],
   imports: [CommonModule, BlogRoutingModule, PageTitleModule, ExternalLinkModule],
 })
 export class BlogModule {}
