@@ -1,7 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { APP_INITIALIZER, ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Router } from '@angular/router';
 import { InspectorModule } from '@ngneat/inspector';
 import * as Sentry from '@sentry/angular';
@@ -17,7 +16,6 @@ import { CoreModule } from './core/core.module';
     AppRoutingModule,
     HttpClientModule,
     CoreModule,
-    BrowserAnimationsModule,
     environment.production ? [] : InspectorModule.forRoot({ position: { top: 'auto', bottom: '20px' } }),
   ],
   providers: [
