@@ -9,7 +9,7 @@ export class ArticleStore extends ComponentStore<Feed> {
     super({ items: [] });
   }
 
-  readonly blogItems$: Observable<Article[]> = this.select((state) => state.items.filter((_, index) => index < 10));
+  readonly blogItems$: Observable<Article[]> = this.select((state) => state.items.filter((_, index) => index < 20));
 
   readonly setFeed = this.updater((_, feed: Feed) => {
     return { items: feed.items };
