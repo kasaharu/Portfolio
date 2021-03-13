@@ -48,7 +48,6 @@
     "@angular/language-service": "~11.2.2",
     "@briebug/cypress-schematic": "^4.4.0",
     "@cypress/webpack-preprocessor": "5.5.0",
-    "@ngneat/inspector": "^1.1.0",
     "@types/jest": "26.0.20",
     "@types/node": "^12.12.14",
     "@types/xml2js": "0.4.8",
