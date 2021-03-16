@@ -21,8 +21,8 @@ export class ActivityPageComponent implements OnDestroy {
   private onDestroy$ = new Subject();
 
   categories = [
-    { key: 'slide', lable: 'Slides' },
-    { key: 'oss', lable: 'OSS' },
+    { key: 'slide', label: 'Slides' },
+    { key: 'oss', label: 'OSS' },
   ];
   activeLink!: string;
 
