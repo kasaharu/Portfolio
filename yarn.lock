@@ -1864,10 +1864,10 @@
   dependencies:
     tslib "^2.0.0"
 
-"@ngrx/component-store@^11.0.1":
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/@ngrx/component-store/-/component-store-11.0.1.tgz#1479702fbff854d6d955f2540839067ddf51a637"
-  integrity sha512-kbiO6Mzh1X12TXedz0xo4i62pwWfkdocw6mzGB1eNZtZYbS1377okZDcXlTeRJH4WhzxqsucKIYXbCE77AhH2A==
+"@ngrx/component-store@^11.1.1":
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/@ngrx/component-store/-/component-store-11.1.1.tgz#9036ada220ff287a872ad74769a0ead70e82924d"
+  integrity sha512-NUVguqhrkopRyh81873MA1R3ZcGV+MTPdVhyTZmMj7EdBNx4EC+swgssuAIO0Bc7A4WFHLWd6inohahfLLdOeg==
   dependencies:
     tslib "^2.0.0"
 
