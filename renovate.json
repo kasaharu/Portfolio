@@ -13,22 +13,5 @@
     "enabled": true,
     "schedule": ["before 3am on the first day of the month"]
   },
-  "packageRules": [
-    {
-      "packagePatterns": ["*"],
-      "enabled": false
-    },
-    {
-      "packagePatterns": [
-        "prettier",
-        "xml2js",
-        "timers"
-      ],
-      "enabled": true
-    },
-    {
-      "packagePatterns": ["circleci/node"],
-      "enabled": true
-    }
-  ]
+  "packageRules": []
 }
