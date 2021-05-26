@@ -64,7 +64,7 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-yarn-
       - name: build
-        run: yarn build --prod
+        run: yarn build
         env:
           CI: true
 
