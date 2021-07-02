@@ -1485,16 +1485,15 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@briebug/cypress-schematic@^4.4.0":
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/@briebug/cypress-schematic/-/cypress-schematic-4.4.0.tgz#264ae33038225e95cee061f6996a4f5a424dfa45"
-  integrity sha512-63jMXFprwXCyxSdQU4MFPIKNTnVzPPsdUNaZgiJIUlMOsN9TMXRu/biz4MkcSwP8mJ1LHKTkkBSkE/5SfhbtfA==
+"@briebug/cypress-schematic@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@briebug/cypress-schematic/-/cypress-schematic-5.0.0.tgz#4d2310099efab36341205825166f86549bdf820f"
+  integrity sha512-CMjPSihkS9BpI3J4uRs/KINahh7QgG98bv9oIyTjNPQhX+n13iuhQTXgFukxwd6CylPWOTQOLS/mnKqf6LvMGg==
   dependencies:
     "@angular-devkit/architect" "^0.1001.0"
     "@angular-devkit/core" "^10.1.0"
     "@angular-devkit/schematics" "^10.1.0"
     "@schematics/angular" "^10.1.0"
-    cypress "^6.0.0"
     rxjs "6.6.2"
 
 "@briebug/jest-schematic@^3.1.0":
@@ -4753,7 +4752,7 @@ csv-streamify@^3.0.4:
   dependencies:
     through2 "2.0.1"
 
-cypress@^6.0.0, cypress@^6.1.0:
+cypress@^6.1.0:
   version "6.6.0"
   resolved "https://registry.yarnpkg.com/cypress/-/cypress-6.6.0.tgz#659c64cdb06e51b6be18fdac39d8f192deb54fa0"
   integrity sha512-+Xx3Zn653LJHUsCb9h1Keql2jlazbr1ROmbY6DFJMmXKLgXP4ez9cE403W93JNGRbZK0Tng3R/oP8mvd9XAPVg==
