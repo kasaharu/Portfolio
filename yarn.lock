@@ -2113,7 +2113,7 @@
   dependencies:
     tslib "^2.1.0"
 
-"@ngrx/component-store@^12.2.0":
+"@ngrx/component-store@12.2.0":
   version "12.2.0"
   resolved "https://registry.yarnpkg.com/@ngrx/component-store/-/component-store-12.2.0.tgz#84f5c06b22d7ea498e9a9dbf45f5b9c8b620943a"
   integrity sha512-RTCe1kOctJGUOBmIZAeYkoK/2g01AZK2GubpL1GixS/NbvvoFSFDya031HuwwVFtXBfwPZxWVL0QHyG29egf/w==
