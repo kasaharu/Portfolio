@@ -59,7 +59,7 @@
         ],
         "dot-notation": "error",
         "import/order": "error",
-        "indent": "error",
+        "indent": ["error", 2],
         "linebreak-style": [
           "error",
           "unix"
