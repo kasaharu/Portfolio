@@ -96,8 +96,7 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-          },
+          "options": {},
           "configurations": {
             "production": {
               "browserTarget": "portfolio:build:production"
@@ -131,15 +130,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "cypress/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
             ]
           }
         },
@@ -190,6 +185,7 @@
   },
   "defaultProject": "portfolio",
   "cli": {
-    "analytics": "8e5cc6d9-c9ec-404a-819b-ebda3b0bcda1"
+    "analytics": "8e5cc6d9-c9ec-404a-819b-ebda3b0bcda1",
+    "defaultCollection": "@angular-eslint/schematics"
   }
 }
