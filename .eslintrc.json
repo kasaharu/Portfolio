@@ -44,6 +44,7 @@
           }
         ],
         "@typescript-eslint/member-ordering": "off",
+        "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
         "arrow-parens": [
           "off",
           "always"
