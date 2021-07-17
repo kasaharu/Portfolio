@@ -10,6 +10,8 @@ export class FeedGateway {
   constructor(private readonly http: HttpClient) {}
 
   getRssResponse(): Observable<RssFeed> {
+    // FIXME: 型に object を使うのをやめる
+    // eslint-disable-next-line @typescript-eslint/ban-types
     const requestOptions: object = {
       observe: 'body',
       responseType: 'text',
