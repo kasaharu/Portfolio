@@ -5,7 +5,7 @@ import { Article } from '../../domain/feed';
 import { ArticleComponent } from './article.component';
 
 @Component({
-  template: `<app-article [feedItem]="item"></app-article>`,
+  template: '<app-article [feedItem]="item"></app-article>',
 })
 class TestHostComponent {
   item: Article = { title: 'テストブログ', categories: [], link: '', publishDate: '' };
