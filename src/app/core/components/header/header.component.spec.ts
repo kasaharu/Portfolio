@@ -36,7 +36,7 @@ describe('HeaderComponent', () => {
     expect(headerHarness).toBeTruthy();
   });
 
-  it('should show as title \'kasaharu.web\'', async () => {
+  it('should show as title kasaharu.web', async () => {
     const headerHarness = await loader.getHarness(HeaderHarness);
     const title = await headerHarness.getTitleText();
 
