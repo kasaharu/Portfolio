@@ -28,7 +28,7 @@
     "@angular/router": "12.1.1",
     "@briebug/jest-schematic": "3.1.0",
     "@kasaharu/ng-workbox": "0.1200.0",
-    "@ngrx/component-store": "12.2.0",
+    "@ngrx/component-store": "12.3.0",
     "@sentry/angular": "6.8.0",
     "@sentry/tracing": "6.8.0",
     "firebase": "8.7.1",
