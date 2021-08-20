@@ -62,7 +62,7 @@
     "eslint-plugin-import": "latest",
     "eslint-plugin-jsdoc": "latest",
     "eslint-plugin-prefer-arrow": "latest",
-    "firebase-tools": "9.16.0",
+    "firebase-tools": "9.16.5",
     "fuzzy": "0.1.3",
     "inquirer": "6.5.2",
     "inquirer-autocomplete-prompt": "1.4.0",
