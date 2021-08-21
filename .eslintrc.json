@@ -20,7 +20,9 @@
         "plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
+      "plugins": ["@kasaharu/ng"],
       "rules": {
+        "@kasaharu/ng/no-ng-no-errors-schema": "error",
         "@angular-eslint/component-selector": [
           "error",
           {
