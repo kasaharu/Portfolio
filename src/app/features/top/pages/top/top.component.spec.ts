@@ -1,4 +1,4 @@
-import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { TopPageComponent } from './top.component';
 
@@ -10,7 +10,7 @@ describe('TopPageComponent', () => {
     waitForAsync(() => {
       TestBed.configureTestingModule({
         declarations: [TopPageComponent],
-        schemas: [NO_ERRORS_SCHEMA],
+        schemas: [CUSTOM_ELEMENTS_SCHEMA],
       }).compileComponents();
     }),
   );
