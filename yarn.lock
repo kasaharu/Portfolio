@@ -20,6 +20,14 @@
     jest-preset-angular "^9.0.1"
     lodash "^4.17.15"
 
+"@angular-devkit/architect@0.1200.5":
+  version "0.1200.5"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1200.5.tgz#db20520c1beff0c206197652c5c46a7755caa2a0"
+  integrity sha512-222VZ4OeaDK3vON8V5m+w15SRWfUs5uOb4H9ij/H9/6tyHD83uWfCDoOGg+ax4wJVdWEFJIS+Vn4ijGcZCq9WQ==
+  dependencies:
+    "@angular-devkit/core" "12.0.5"
+    rxjs "6.6.7"
+
 "@angular-devkit/architect@0.1202.3":
   version "0.1202.3"
   resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1202.3.tgz#4bc0a8dc7b1c39eb738c7276fb428454faae84ea"
@@ -43,14 +51,6 @@
   dependencies:
     "@angular-devkit/core" "10.1.7"
     rxjs "6.6.2"
-
-"@angular-devkit/architect@^0.1200.0":
-  version "0.1200.5"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1200.5.tgz#db20520c1beff0c206197652c5c46a7755caa2a0"
-  integrity sha512-222VZ4OeaDK3vON8V5m+w15SRWfUs5uOb4H9ij/H9/6tyHD83uWfCDoOGg+ax4wJVdWEFJIS+Vn4ijGcZCq9WQ==
-  dependencies:
-    "@angular-devkit/core" "12.0.5"
-    rxjs "6.6.7"
 
 "@angular-devkit/build-angular@12.2.3":
   version "12.2.3"
