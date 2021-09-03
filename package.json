@@ -55,7 +55,7 @@
     "@briebug/cypress-schematic": "5.0.1",
     "@kasaharu/eslint-plugin-ng": "0.0.2",
     "@types/jest": "27.0.1",
-    "@types/node": "14.17.12",
+    "@types/node": "14.17.14",
     "@types/xml2js": "0.4.9",
     "@typescript-eslint/eslint-plugin": "4.29.3",
     "@typescript-eslint/parser": "4.29.3",
