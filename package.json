@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.1202.0",
+  "version": "1.1202.1",
   "scripts": {
     "ng": "ng",
     "postinstall": "ngcc",
