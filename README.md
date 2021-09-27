@@ -13,3 +13,4 @@
 - Cypress
 - Sentry
 - Firebase hosting
+- GitHub Actions
