@@ -38,7 +38,7 @@
     "tslib": "2.3.1",
     "xml2js": "0.4.23",
     "zone.js": "0.11.4",
-    "rxfire": "6.0.1"
+    "rxfire": "6.0.2"
   },
   "devDependencies": {
     "@angular-builders/jest": "12.1.0",
