@@ -11,7 +11,8 @@
     "allowJs": true
   },
   "files": [
-    "src/polyfills.ts"
+    "src/polyfills.ts",
+    "src/setup-jest.ts"
   ],
   "include": [
     "src/**/*.spec.ts",

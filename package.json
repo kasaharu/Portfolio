@@ -6,7 +6,7 @@
     "postinstall": "ngcc",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test --coverage",
+    "test": "jest --coverage",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "prettier": "prettier --write './**/*.{ts,html,scss}'",
