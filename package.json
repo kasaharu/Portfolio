@@ -41,7 +41,7 @@
     "rxfire": "6.0.3"
   },
   "devDependencies": {
-    "@angular-builders/jest": "12.1.0",
+    "@angular-builders/jest": "13.0.0",
     "@angular-devkit/architect": "0.1300.3",
     "@angular-devkit/build-angular": "13.0.3",
     "@angular-eslint/builder": "13.0.1",
