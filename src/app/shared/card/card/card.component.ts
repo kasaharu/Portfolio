@@ -7,12 +7,8 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CardComponent {
-  @Input()
-    title = '';
-  @Input()
-    demoPageUrl = '';
-  @Input()
-    repositoryName = '';
-  @Input()
-    repositoryUrl = '';
+  @Input() title = '';
+  @Input() demoPageUrl = '';
+  @Input() repositoryName = '';
+  @Input() repositoryUrl = '';
 }

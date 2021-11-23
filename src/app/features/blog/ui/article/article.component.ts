@@ -8,6 +8,5 @@ import { Article } from '../../domain/feed';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ArticleComponent {
-  @Input()
-    feedItem!: Article;
+  @Input() feedItem!: Article;
 }
