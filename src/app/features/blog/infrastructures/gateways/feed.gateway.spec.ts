@@ -7,8 +7,9 @@ describe('FeedGateway', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
-    });
+    imports: [HttpClientTestingModule],
+    teardown: { destroyAfterEach: false }
+});
     gateway = TestBed.inject(FeedGateway);
   });
 

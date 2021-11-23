@@ -8,9 +8,10 @@ describe('ArticleUsecase', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
-      providers: [ArticleUsecase, ArticleStore],
-    });
+    imports: [HttpClientTestingModule],
+    providers: [ArticleUsecase, ArticleStore],
+    teardown: { destroyAfterEach: false }
+});
     usecase = TestBed.inject(ArticleUsecase);
   });
 

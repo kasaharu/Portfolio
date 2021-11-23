@@ -13,9 +13,10 @@ describe('HeaderComponent', () => {
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        imports: [NgWorkboxComponentsModule],
-        declarations: [HeaderComponent],
-      }).compileComponents();
+    imports: [NgWorkboxComponentsModule],
+    declarations: [HeaderComponent],
+    teardown: { destroyAfterEach: false }
+}).compileComponents();
     }),
   );
 

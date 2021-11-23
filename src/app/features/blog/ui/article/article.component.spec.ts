@@ -17,8 +17,9 @@ describe('FeedItemComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ArticleComponent, TestHostComponent],
-    }).compileComponents();
+    declarations: [ArticleComponent, TestHostComponent],
+    teardown: { destroyAfterEach: false }
+}).compileComponents();
   });
 
   beforeEach(() => {

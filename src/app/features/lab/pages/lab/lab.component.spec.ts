@@ -10,9 +10,10 @@ describe('LabComponent', () => {
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        declarations: [LabPageComponent],
-        imports: [PageTitleModule, CardModule],
-      }).compileComponents();
+    declarations: [LabPageComponent],
+    imports: [PageTitleModule, CardModule],
+    teardown: { destroyAfterEach: false }
+}).compileComponents();
     }),
   );
 

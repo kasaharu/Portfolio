@@ -8,9 +8,10 @@ describe('SlidePageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [SlidePageComponent],
-      imports: [MatTableModule],
-    }).compileComponents();
+    declarations: [SlidePageComponent],
+    imports: [MatTableModule],
+    teardown: { destroyAfterEach: false }
+}).compileComponents();
   });
 
   beforeEach(() => {

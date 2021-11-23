@@ -9,9 +9,10 @@ describe('TopPageComponent', () => {
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        declarations: [TopPageComponent],
-        schemas: [CUSTOM_ELEMENTS_SCHEMA],
-      }).compileComponents();
+    declarations: [TopPageComponent],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    teardown: { destroyAfterEach: false }
+}).compileComponents();
     }),
   );
 

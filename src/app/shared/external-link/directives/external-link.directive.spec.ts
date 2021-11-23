@@ -18,8 +18,9 @@ describe('ExternalLinkDirective is not used', () => {
 
   beforeEach(() => {
     fixture = TestBed.configureTestingModule({
-      declarations: [TestComponent, ExternalLinkDirective],
-    }).createComponent(TestComponent);
+    declarations: [TestComponent, ExternalLinkDirective],
+    teardown: { destroyAfterEach: false }
+}).createComponent(TestComponent);
 
     fixture.detectChanges();
   });
@@ -35,8 +36,9 @@ describe('ExternalLinkDirective is used', () => {
 
   beforeEach(() => {
     fixture = TestBed.configureTestingModule({
-      declarations: [TestUsingDirectiveComponent, ExternalLinkDirective],
-    }).createComponent(TestUsingDirectiveComponent);
+    declarations: [TestUsingDirectiveComponent, ExternalLinkDirective],
+    teardown: { destroyAfterEach: false }
+}).createComponent(TestUsingDirectiveComponent);
 
     fixture.detectChanges();
   });

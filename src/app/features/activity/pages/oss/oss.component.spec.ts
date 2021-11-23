@@ -10,9 +10,10 @@ describe('OssListPageComponent', () => {
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        declarations: [OssPageComponent],
-        imports: [MatTableModule, PageTitleModule],
-      }).compileComponents();
+    declarations: [OssPageComponent],
+    imports: [MatTableModule, PageTitleModule],
+    teardown: { destroyAfterEach: false }
+}).compileComponents();
     }),
   );
 
