@@ -9,10 +9,10 @@ describe('ArticleComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    declarations: [ArticlesComponent],
-    imports: [HttpClientTestingModule, PageTitleModule],
-    teardown: { destroyAfterEach: false }
-}).compileComponents();
+      declarations: [ArticlesComponent],
+      imports: [HttpClientTestingModule, PageTitleModule],
+      teardown: { destroyAfterEach: false },
+    }).compileComponents();
   });
 
   beforeEach(() => {

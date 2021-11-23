@@ -7,10 +7,10 @@ describe('AppComponent', () => {
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-    declarations: [AppComponent],
-    imports: [RouterTestingModule, CoreModule],
-    teardown: { destroyAfterEach: false }
-}).compileComponents();
+        declarations: [AppComponent],
+        imports: [RouterTestingModule, CoreModule],
+        teardown: { destroyAfterEach: false },
+      }).compileComponents();
     }),
   );
 

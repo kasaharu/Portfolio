@@ -9,10 +9,10 @@ describe('TopComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    declarations: [TopComponent],
-    imports: [PageTitleModule, ExternalLinkModule],
-    teardown: { destroyAfterEach: false }
-}).compileComponents();
+      declarations: [TopComponent],
+      imports: [PageTitleModule, ExternalLinkModule],
+      teardown: { destroyAfterEach: false },
+    }).compileComponents();
   });
 
   beforeEach(() => {

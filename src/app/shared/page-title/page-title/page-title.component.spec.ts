@@ -8,9 +8,9 @@ describe('PageTitleComponent', () => {
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-    declarations: [PageTitleComponent],
-    teardown: { destroyAfterEach: false }
-}).compileComponents();
+        declarations: [PageTitleComponent],
+        teardown: { destroyAfterEach: false },
+      }).compileComponents();
     }),
   );
 

@@ -8,9 +8,9 @@ describe('CardComponent', () => {
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-    declarations: [CardComponent],
-    teardown: { destroyAfterEach: false }
-}).compileComponents();
+        declarations: [CardComponent],
+        teardown: { destroyAfterEach: false },
+      }).compileComponents();
     }),
   );
 

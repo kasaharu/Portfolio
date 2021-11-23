@@ -11,10 +11,10 @@ describe('ActivityPageComponent', () => {
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-    declarations: [ActivityPageComponent],
-    imports: [RouterTestingModule, MatTabsModule, PageTitleModule],
-    teardown: { destroyAfterEach: false }
-}).compileComponents();
+        declarations: [ActivityPageComponent],
+        imports: [RouterTestingModule, MatTabsModule, PageTitleModule],
+        teardown: { destroyAfterEach: false },
+      }).compileComponents();
     }),
   );
 

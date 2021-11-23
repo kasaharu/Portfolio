@@ -8,10 +8,10 @@ describe('BlogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    declarations: [BlogPageComponent],
-    schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    teardown: { destroyAfterEach: false }
-}).compileComponents();
+      declarations: [BlogPageComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      teardown: { destroyAfterEach: false },
+    }).compileComponents();
   });
 
   beforeEach(() => {
