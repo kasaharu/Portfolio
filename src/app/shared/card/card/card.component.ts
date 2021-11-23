@@ -8,11 +8,11 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 })
 export class CardComponent {
   @Input()
-  title = '';
+    title = '';
   @Input()
-  demoPageUrl = '';
+    demoPageUrl = '';
   @Input()
-  repositoryName = '';
+    repositoryName = '';
   @Input()
-  repositoryUrl = '';
+    repositoryUrl = '';
 }

@@ -9,5 +9,5 @@ import { Article } from '../../domain/feed';
 })
 export class ArticleComponent {
   @Input()
-  feedItem!: Article;
+    feedItem!: Article;
 }
