@@ -62,7 +62,7 @@
     "eslint-plugin-import": "2.25.3",
     "eslint-plugin-jsdoc": "latest",
     "eslint-plugin-prefer-arrow": "latest",
-    "firebase-tools": "9.23.3",
+    "firebase-tools": "10.0.1",
     "jest": "27.4.5",
     "jest-preset-angular": "11.0.1",
     "jsonc-parser": "3.0.0",
