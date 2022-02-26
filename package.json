@@ -26,7 +26,6 @@
     "@angular/platform-browser": "13.2.4",
     "@angular/platform-browser-dynamic": "13.2.4",
     "@angular/router": "13.2.4",
-    "@kasaharu/ng-workbox": "0.1301.0",
     "@ngrx/component-store": "13.0.2",
     "@sentry/angular": "6.18.0",
     "@sentry/tracing": "6.18.0",

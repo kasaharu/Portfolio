@@ -2183,13 +2183,6 @@
   dependencies:
     requireindex "~1.1.0"
 
-"@kasaharu/ng-workbox@0.1301.0":
-  version "0.1301.0"
-  resolved "https://registry.yarnpkg.com/@kasaharu/ng-workbox/-/ng-workbox-0.1301.0.tgz#9f5934f08c1db94048ab13f167287dbe5cdee838"
-  integrity sha512-EoyQtOQLXHhNSIU636QPIcCDH1VEddJs7uzFBM943LOe/FydpuzEdfFlkICx6euloNsOMEmt1vSFltkRKSfgSg==
-  dependencies:
-    tslib "^2.3.0"
-
 "@ngrx/component-store@13.0.2":
   version "13.0.2"
   resolved "https://registry.yarnpkg.com/@ngrx/component-store/-/component-store-13.0.2.tgz#fd254a2000851a213ee3c0ba76164055c370939e"
