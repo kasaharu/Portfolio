@@ -1,5 +1,24 @@
 @import '../../../../assets/styles/properties';
 
+:host {
+  display: block;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  padding: 0 48px;
+  background-color: #222;
+  box-sizing: border-box;
+}
+
+.title {
+  color: aliceblue;
+  font-size: 1rem;
+}
+
 a {
   color: aliceblue;
   text-decoration: none;
@@ -7,4 +26,11 @@ a {
 
 a:not(:last-child) {
   margin-right: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 0 12px;
+    font-size: 0.8rem;
+  }
 }
