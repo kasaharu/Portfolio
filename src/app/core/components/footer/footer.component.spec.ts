@@ -1,26 +1,16 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { render, screen } from '@testing-library/angular';
 import { FooterComponent } from './footer.component';
 
 describe('FooterComponent', () => {
-  let component: FooterComponent;
-  let fixture: ComponentFixture<FooterComponent>;
+  it('© 2019 kasaharu が表示されること', async () => {
+    await render(FooterComponent);
 
-  beforeEach(
-    waitForAsync(() => {
-      TestBed.configureTestingModule({
-        declarations: [FooterComponent],
-        teardown: { destroyAfterEach: false },
-      }).compileComponents();
-    }),
-  );
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(FooterComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    expect(screen.getByText('© 2019 kasaharu')).toBeTruthy();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('GitHub repository という link が表示される', async () => {
+    await render(FooterComponent);
+
+    expect(screen.getByRole('link', { name: /GitHub repository/i }));
   });
 });
