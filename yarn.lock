@@ -2430,7 +2430,7 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@testing-library/angular@^11.0.3":
+"@testing-library/angular@11.0.3":
   version "11.0.3"
   resolved "https://registry.yarnpkg.com/@testing-library/angular/-/angular-11.0.3.tgz#51f1a8958ce2b2c3b91438f88d67cf1f375c637a"
   integrity sha512-trSMbX5lQAopff+Kg8XAmzWVNsYJdJLw6W+ir5/eYKc4CUZ09CeKJiEEhkcvUkxMHW8Z1EOxeIORNzX8Hx6qVA==
