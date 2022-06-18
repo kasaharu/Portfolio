@@ -59,7 +59,7 @@
     "@typescript-eslint/parser": "5.12.1",
     "cypress": "9.7.0",
     "eslint": "8.16.0",
-    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jsdoc": "latest",
     "eslint-plugin-prefer-arrow": "latest",
     "firebase-tools": "10.2.1",
