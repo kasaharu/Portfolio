@@ -3003,10 +3003,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@testing-library/angular@11.0.4":
-  version "11.0.4"
-  resolved "https://registry.yarnpkg.com/@testing-library/angular/-/angular-11.0.4.tgz#7585eb7828092fc8636f8fe021d03094a7115364"
-  integrity sha512-d/rGeVy/EMeGybPaXbsrOKE8VdJTP8V97S97mrFRPXjN1/Cg3eAzv+OAHMyD9oyRgwnRprJWWagvkk3ZCyrNjw==
+"@testing-library/angular@12.0.2":
+  version "12.0.2"
+  resolved "https://registry.yarnpkg.com/@testing-library/angular/-/angular-12.0.2.tgz#b2cfce1090759ed12775f092e08ce1f40d4a7537"
+  integrity sha512-iNm2UvX2tOtz1EOI7UiFRowRUIh1HDkahhAERF9wB6mcIix2RF/ivw1BqOAzRtYY+nsTbTc/gXhz1KAczbyjHQ==
   dependencies:
     "@testing-library/dom" "^8.0.0"
     tslib "^2.3.1"
@@ -11219,17 +11219,17 @@ rxjs@6.6.7, rxjs@^6.5.4, rxjs@^6.6.0, rxjs@^6.6.2:
   dependencies:
     tslib "^1.9.0"
 
+rxjs@7.5.5, rxjs@^7.5.5:
+  version "7.5.5"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.5.5.tgz#2ebad89af0f560f460ad5cc4213219e1f7dd4e9f"
+  integrity sha512-sy+H0pQofO95VDmFLzyaw9xNJU4KTRSwQIGM6+iG3SypAtCiLDzpeG8sJrNCWn2Up9km+KhkvTdbkrdy+yzZdw==
+  dependencies:
+    tslib "^2.1.0"
+
 rxjs@^7.2.0, rxjs@^7.5.1:
   version "7.5.4"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.5.4.tgz#3d6bd407e6b7ce9a123e76b1e770dc5761aa368d"
   integrity sha512-h5M3Hk78r6wAheJF0a5YahB1yRQKCsZ4MsGdZ5O9ETbVtjPcScGfrMmoOq7EBsCRzd4BDkvDJ7ogP8Sz5tTFiQ==
-  dependencies:
-    tslib "^2.1.0"
-
-rxjs@^7.5.5:
-  version "7.5.5"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.5.5.tgz#2ebad89af0f560f460ad5cc4213219e1f7dd4e9f"
-  integrity sha512-sy+H0pQofO95VDmFLzyaw9xNJU4KTRSwQIGM6+iG3SypAtCiLDzpeG8sJrNCWn2Up9km+KhkvTdbkrdy+yzZdw==
   dependencies:
     tslib "^2.1.0"
 
