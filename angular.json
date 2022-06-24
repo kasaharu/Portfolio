@@ -3,21 +3,16 @@
   "version": 1,
   "newProjectRoot": "projects",
   "schematics": {
-    "@schematics/angular:class": {
-    },
+    "@schematics/angular:class": {},
     "@schematics/angular:component": {
       "style": "scss",
       "changeDetection": "OnPush",
       "displayBlock": true
     },
-    "@schematics/angular:directive": {
-    },
-    "@schematics/angular:module": {
-    },
-    "@schematics/angular:pipe": {
-    },
-    "@schematics/angular:service": {
-    },
+    "@schematics/angular:directive": {},
+    "@schematics/angular:module": {},
+    "@schematics/angular:pipe": {},
+    "@schematics/angular:service": {},
     "@schematics/angular:application": {
       "strict": true
     }
@@ -161,9 +156,10 @@
       }
     }
   },
-  "defaultProject": "portfolio",
   "cli": {
     "analytics": "8e5cc6d9-c9ec-404a-819b-ebda3b0bcda1",
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
