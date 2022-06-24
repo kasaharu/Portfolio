@@ -18,7 +18,7 @@ export class ActivityPageComponent implements OnDestroy {
     });
   }
 
-  private onDestroy$ = new Subject();
+  private onDestroy$ = new Subject<void>();
 
   categories = [
     { key: 'slide', label: 'Slides' },
