@@ -3,7 +3,6 @@
   "version": "1.1302.0",
   "scripts": {
     "ng": "ng",
-    "postinstall": "ngcc",
     "start": "ng serve",
     "build": "ng build",
     "test": "jest src/app --coverage",
