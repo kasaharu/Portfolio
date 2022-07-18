@@ -7,15 +7,13 @@ describe('OssListPageComponent', () => {
   let component: OssPageComponent;
   let fixture: ComponentFixture<OssPageComponent>;
 
-  beforeEach(
-    waitForAsync(() => {
-      TestBed.configureTestingModule({
-        declarations: [OssPageComponent],
-        imports: [MatTableModule, PageTitleModule],
-        teardown: { destroyAfterEach: false },
-      }).compileComponents();
-    }),
-  );
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      declarations: [OssPageComponent],
+      imports: [MatTableModule, PageTitleModule],
+      teardown: { destroyAfterEach: false },
+    }).compileComponents();
+  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(OssPageComponent);
