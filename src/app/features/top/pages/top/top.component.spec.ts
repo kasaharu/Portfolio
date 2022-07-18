@@ -6,15 +6,13 @@ describe('TopPageComponent', () => {
   let component: TopPageComponent;
   let fixture: ComponentFixture<TopPageComponent>;
 
-  beforeEach(
-    waitForAsync(() => {
-      TestBed.configureTestingModule({
-        declarations: [TopPageComponent],
-        schemas: [CUSTOM_ELEMENTS_SCHEMA],
-        teardown: { destroyAfterEach: false },
-      }).compileComponents();
-    }),
-  );
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      declarations: [TopPageComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      teardown: { destroyAfterEach: false },
+    }).compileComponents();
+  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(TopPageComponent);

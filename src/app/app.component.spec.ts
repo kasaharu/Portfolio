@@ -4,15 +4,13 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 
 describe('AppComponent', () => {
-  beforeEach(
-    waitForAsync(() => {
-      TestBed.configureTestingModule({
-        declarations: [AppComponent],
-        imports: [RouterTestingModule, CoreModule],
-        teardown: { destroyAfterEach: false },
-      }).compileComponents();
-    }),
-  );
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      declarations: [AppComponent],
+      imports: [RouterTestingModule, CoreModule],
+      teardown: { destroyAfterEach: false },
+    }).compileComponents();
+  }));
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);

@@ -8,15 +8,13 @@ describe('ActivityPageComponent', () => {
   let component: ActivityPageComponent;
   let fixture: ComponentFixture<ActivityPageComponent>;
 
-  beforeEach(
-    waitForAsync(() => {
-      TestBed.configureTestingModule({
-        declarations: [ActivityPageComponent],
-        imports: [RouterTestingModule, MatTabsModule, PageTitleModule],
-        teardown: { destroyAfterEach: false },
-      }).compileComponents();
-    }),
-  );
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      declarations: [ActivityPageComponent],
+      imports: [RouterTestingModule, MatTabsModule, PageTitleModule],
+      teardown: { destroyAfterEach: false },
+    }).compileComponents();
+  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ActivityPageComponent);

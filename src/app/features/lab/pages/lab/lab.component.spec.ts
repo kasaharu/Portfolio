@@ -7,15 +7,13 @@ describe('LabComponent', () => {
   let component: LabPageComponent;
   let fixture: ComponentFixture<LabPageComponent>;
 
-  beforeEach(
-    waitForAsync(() => {
-      TestBed.configureTestingModule({
-        declarations: [LabPageComponent],
-        imports: [PageTitleModule, CardModule],
-        teardown: { destroyAfterEach: false },
-      }).compileComponents();
-    }),
-  );
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      declarations: [LabPageComponent],
+      imports: [PageTitleModule, CardModule],
+      teardown: { destroyAfterEach: false },
+    }).compileComponents();
+  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(LabPageComponent);
