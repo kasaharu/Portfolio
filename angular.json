@@ -15,6 +15,12 @@
     "@schematics/angular:service": {},
     "@schematics/angular:application": {
       "strict": true
+    },
+    "@angular-eslint/schematics:application": {
+      "setParserOptionsProject": true
+    },
+    "@angular-eslint/schematics:library": {
+      "setParserOptionsProject": true
     }
   },
   "projects": {
