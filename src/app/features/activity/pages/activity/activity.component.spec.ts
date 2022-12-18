@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { MatTabsModule } from '@angular/material/tabs';
+import { MatLegacyTabsModule as MatTabsModule } from '@angular/material/legacy-tabs';
 import { RouterTestingModule } from '@angular/router/testing';
 import { PageTitleModule } from '../../../../shared/page-title/page-title.module';
 import { ActivityPageComponent } from './activity.component';
