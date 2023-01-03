@@ -1,5 +1,5 @@
 <div class="blog-item">
-  <p class="blog-item-date">{{ feedItem.publishDate | date: 'yyyy/MM/dd' }}</p>
+  <p class="blog-item-date">{{ feedItem.publishDate | date : 'yyyy/MM/dd' }}</p>
   <a class="blog-item-link" href="{{ feedItem.link }}" target="_blank" rel="noopener">{{ feedItem.title }}</a>
   <ul class="category">
     <ng-container *ngFor="let category of feedItem.categories">
