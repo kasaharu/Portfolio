@@ -59,7 +59,7 @@
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-jsdoc": "latest",
     "eslint-plugin-prefer-arrow": "latest",
-    "jest": "29.3.1",
+    "jest": "29.4.3",
     "jest-preset-angular": "12.2.6",
     "jsonc-parser": "3.2.0",
     "open": "7.4.2",
