@@ -8,7 +8,7 @@ describe('TopPageComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [TopPageComponent],
+      imports: [TopPageComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
       teardown: { destroyAfterEach: false },
     }).compileComponents();

@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { MatLegacyTabsModule as MatTabsModule } from '@angular/material/legacy-tabs';
 import { RouterTestingModule } from '@angular/router/testing';
-import { PageTitleModule } from '../../../../shared/page-title/page-title.module';
+import { PageTitleComponent } from '../../../../shared/page-title/page-title/page-title.component';
 import { ActivityPageComponent } from './activity.component';
 
 describe('ActivityPageComponent', () => {
@@ -10,8 +10,7 @@ describe('ActivityPageComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ActivityPageComponent],
-      imports: [RouterTestingModule, MatTabsModule, PageTitleModule],
+      imports: [ActivityPageComponent, RouterTestingModule, MatTabsModule, PageTitleComponent],
       teardown: { destroyAfterEach: false },
     }).compileComponents();
   }));

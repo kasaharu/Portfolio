@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { CardModule } from '../../../../shared/card/card.module';
-import { PageTitleModule } from '../../../../shared/page-title/page-title.module';
+import { CardComponent } from '../../../../shared/card/card/card.component';
+import { PageTitleComponent } from '../../../../shared/page-title/page-title/page-title.component';
 import { LabPageComponent } from './lab.component';
 
 describe('LabComponent', () => {
@@ -9,8 +9,7 @@ describe('LabComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [LabPageComponent],
-      imports: [PageTitleModule, CardModule],
+      imports: [LabPageComponent, PageTitleComponent, CardComponent],
       teardown: { destroyAfterEach: false },
     }).compileComponents();
   }));

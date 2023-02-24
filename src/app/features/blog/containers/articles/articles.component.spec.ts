@@ -1,6 +1,6 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { PageTitleModule } from '../../../../shared/page-title/page-title.module';
+import { PageTitleComponent } from '../../../../shared/page-title/page-title/page-title.component';
 import { ArticlesComponent } from './articles.component';
 
 describe('ArticleComponent', () => {
@@ -9,8 +9,7 @@ describe('ArticleComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ArticlesComponent],
-      imports: [HttpClientTestingModule, PageTitleModule],
+      imports: [ArticlesComponent, HttpClientTestingModule, PageTitleComponent],
       teardown: { destroyAfterEach: false },
     }).compileComponents();
   });

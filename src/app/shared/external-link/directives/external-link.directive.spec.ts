@@ -5,11 +5,14 @@ import { ExternalLinkDirective } from './external-link.directive';
 
 @Component({
   template: '<a href="/">Test</a>',
+  standalone: true,
 })
 class TestComponent {}
 
 @Component({
   template: '<a appExternalLink href="/">Test2</a>',
+  standalone: true,
+  imports: [ExternalLinkDirective],
 })
 class TestUsingDirectiveComponent {}
 
@@ -18,7 +21,7 @@ describe('ExternalLinkDirective is not used', () => {
 
   beforeEach(() => {
     fixture = TestBed.configureTestingModule({
-      declarations: [TestComponent, ExternalLinkDirective],
+      imports: [TestComponent, ExternalLinkDirective],
       teardown: { destroyAfterEach: false },
     }).createComponent(TestComponent);
 
@@ -36,7 +39,7 @@ describe('ExternalLinkDirective is used', () => {
 
   beforeEach(() => {
     fixture = TestBed.configureTestingModule({
-      declarations: [TestUsingDirectiveComponent, ExternalLinkDirective],
+      imports: [TestUsingDirectiveComponent, ExternalLinkDirective],
       teardown: { destroyAfterEach: false },
     }).createComponent(TestUsingDirectiveComponent);
 

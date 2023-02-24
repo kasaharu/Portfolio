@@ -6,6 +6,7 @@ import { ArticleComponent } from './article.component';
 
 @Component({
   template: '<app-article [feedItem]="item"></app-article>',
+  standalone: true,
 })
 class TestHostComponent {
   item: Article = { title: 'テストブログ', categories: [], link: '', publishDate: '' };
@@ -17,7 +18,7 @@ describe('FeedItemComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ArticleComponent, TestHostComponent],
+      imports: [ArticleComponent, TestHostComponent],
       teardown: { destroyAfterEach: false },
     }).compileComponents();
   });

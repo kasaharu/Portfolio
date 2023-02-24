@@ -7,7 +7,7 @@ describe('PageTitleComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [PageTitleComponent],
+      imports: [PageTitleComponent],
       teardown: { destroyAfterEach: false },
     }).compileComponents();
   }));
