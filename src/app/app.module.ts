@@ -5,11 +5,11 @@ import { Router } from '@angular/router';
 import * as Sentry from '@sentry/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CoreModule } from './core/core.module';
+
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, CoreModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [
     { provide: ErrorHandler, useValue: Sentry.createErrorHandler({ showDialog: true }) },
     { provide: Sentry.TraceService, deps: [Router] },
