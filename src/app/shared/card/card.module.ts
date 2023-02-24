@@ -4,8 +4,7 @@ import { ExternalLinkModule } from '../external-link/external-link.module';
 import { CardComponent } from './card/card.component';
 
 @NgModule({
-  declarations: [CardComponent],
-  imports: [CommonModule, ExternalLinkModule],
-  exports: [CardComponent],
+    imports: [CommonModule, ExternalLinkModule, CardComponent],
+    exports: [CardComponent]
 })
 export class CardModule {}

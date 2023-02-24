@@ -6,7 +6,6 @@ import { LabRoutingModule } from './lab-routing.module';
 import { LabPageComponent } from './pages/lab/lab.component';
 
 @NgModule({
-  declarations: [LabPageComponent],
-  imports: [CommonModule, LabRoutingModule, PageTitleModule, CardModule],
+    imports: [CommonModule, LabRoutingModule, PageTitleModule, CardModule, LabPageComponent]
 })
 export class LabModule {}

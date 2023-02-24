@@ -7,7 +7,6 @@ import { TopPageComponent } from './pages/top/top.component';
 import { TopRoutingModule } from './top-routing.module';
 
 @NgModule({
-  declarations: [TopPageComponent, TopComponent],
-  imports: [CommonModule, TopRoutingModule, PageTitleModule, ExternalLinkModule],
+    imports: [CommonModule, TopRoutingModule, PageTitleModule, ExternalLinkModule, TopPageComponent, TopComponent]
 })
 export class TopModule {}

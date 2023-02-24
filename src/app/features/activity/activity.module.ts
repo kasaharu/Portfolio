@@ -10,7 +10,6 @@ import { OssPageComponent } from './pages/oss/oss.component';
 import { SlidePageComponent } from './pages/slide/slide.component';
 
 @NgModule({
-  declarations: [ActivityPageComponent, OssPageComponent, SlidePageComponent],
-  imports: [CommonModule, ActivityRoutingModule, MatTableModule, MatTabsModule, PageTitleModule, ExternalLinkModule],
+    imports: [CommonModule, ActivityRoutingModule, MatTableModule, MatTabsModule, PageTitleModule, ExternalLinkModule, ActivityPageComponent, OssPageComponent, SlidePageComponent]
 })
 export class ActivityModule {}

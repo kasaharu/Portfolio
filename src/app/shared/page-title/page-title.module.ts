@@ -3,8 +3,7 @@ import { NgModule } from '@angular/core';
 import { PageTitleComponent } from './page-title/page-title.component';
 
 @NgModule({
-  declarations: [PageTitleComponent],
-  imports: [CommonModule],
-  exports: [PageTitleComponent],
+    imports: [CommonModule, PageTitleComponent],
+    exports: [PageTitleComponent]
 })
 export class PageTitleModule {}

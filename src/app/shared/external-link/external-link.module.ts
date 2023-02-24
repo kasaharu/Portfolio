@@ -3,8 +3,7 @@ import { NgModule } from '@angular/core';
 import { ExternalLinkDirective } from './directives/external-link.directive';
 
 @NgModule({
-  declarations: [ExternalLinkDirective],
-  imports: [CommonModule],
-  exports: [ExternalLinkDirective],
+    imports: [CommonModule, ExternalLinkDirective],
+    exports: [ExternalLinkDirective]
 })
 export class ExternalLinkModule {}

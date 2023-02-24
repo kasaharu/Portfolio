@@ -8,7 +8,6 @@ import { BlogPageComponent } from './pages/blog/blog.component';
 import { ArticleComponent } from './ui/article/article.component';
 
 @NgModule({
-  declarations: [BlogPageComponent, ArticleComponent, ArticlesComponent],
-  imports: [CommonModule, BlogRoutingModule, PageTitleModule, ExternalLinkModule],
+    imports: [CommonModule, BlogRoutingModule, PageTitleModule, ExternalLinkModule, BlogPageComponent, ArticleComponent, ArticlesComponent]
 })
 export class BlogModule {}
