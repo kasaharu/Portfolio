@@ -1,9 +1,14 @@
-import { enableProdMode } from '@angular/core';
+import { enableProdMode, ErrorHandler, APP_INITIALIZER, importProvidersFrom } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import * as Sentry from '@sentry/angular';
 import { Integrations } from '@sentry/tracing';
-import { AppModule } from './app/app.module';
+
 import { environment } from './environments/environment';
+import { AppComponent } from './app/app.component';
+import { withInterceptorsFromDi, provideHttpClient } from '@angular/common/http';
+import { AppRoutingModule } from './app/app-routing.module';
+import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 Sentry.init({
   dsn: 'https://a64ddf4e943f4e37a318779ebc1108b6@o492848.ingest.sentry.io/5560941',
@@ -28,6 +33,13 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic()
-  .bootstrapModule(AppModule)
+bootstrapApplication(AppComponent, {
+    providers: [
+        importProvidersFrom(BrowserModule, AppRoutingModule),
+        { provide: ErrorHandler, useValue: Sentry.createErrorHandler({ showDialog: true }) },
+        { provide: Sentry.TraceService, deps: [Router] },
+        { provide: APP_INITIALIZER, useFactory: () => () => { }, deps: [Sentry.TraceService], multi: true },
+        provideHttpClient(withInterceptorsFromDi())
+    ]
+})
   .catch((err) => console.error(err));
