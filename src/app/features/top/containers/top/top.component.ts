@@ -5,12 +5,12 @@ import { NgFor } from '@angular/common';
 import { PageTitleComponent } from '../../../../shared/page-title/page-title/page-title.component';
 
 @Component({
-    selector: 'app-top',
-    templateUrl: './top.component.html',
-    styleUrls: ['./top.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
-    imports: [PageTitleComponent, NgFor, ExternalLinkDirective]
+  selector: 'app-top',
+  templateUrl: './top.component.html',
+  styleUrls: ['./top.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [PageTitleComponent, NgFor, ExternalLinkDirective],
 })
 export class TopComponent {
   readonly name = 'kasaharu (Wataru KASAHARA)';

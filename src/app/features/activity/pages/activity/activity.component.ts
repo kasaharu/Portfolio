@@ -7,11 +7,11 @@ import { MatLegacyTabsModule } from '@angular/material/legacy-tabs';
 import { PageTitleComponent } from '../../../../shared/page-title/page-title/page-title.component';
 
 @Component({
-    templateUrl: './activity.component.html',
-    styleUrls: ['./activity.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
-    imports: [PageTitleComponent, MatLegacyTabsModule, NgFor, RouterLink, RouterOutlet]
+  templateUrl: './activity.component.html',
+  styleUrls: ['./activity.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [PageTitleComponent, MatLegacyTabsModule, NgFor, RouterLink, RouterOutlet],
 })
 export class ActivityPageComponent implements OnDestroy {
   constructor(private readonly router: Router) {

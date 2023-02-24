@@ -34,12 +34,11 @@ if (environment.production) {
 }
 
 bootstrapApplication(AppComponent, {
-    providers: [
-        importProvidersFrom(BrowserModule, AppRoutingModule),
-        { provide: ErrorHandler, useValue: Sentry.createErrorHandler({ showDialog: true }) },
-        { provide: Sentry.TraceService, deps: [Router] },
-        { provide: APP_INITIALIZER, useFactory: () => () => { }, deps: [Sentry.TraceService], multi: true },
-        provideHttpClient(withInterceptorsFromDi())
-    ]
-})
-  .catch((err) => console.error(err));
+  providers: [
+    importProvidersFrom(BrowserModule, AppRoutingModule),
+    { provide: ErrorHandler, useValue: Sentry.createErrorHandler({ showDialog: true }) },
+    { provide: Sentry.TraceService, deps: [Router] },
+    { provide: APP_INITIALIZER, useFactory: () => () => {}, deps: [Sentry.TraceService], multi: true },
+    provideHttpClient(withInterceptorsFromDi()),
+  ],
+}).catch((err) => console.error(err));

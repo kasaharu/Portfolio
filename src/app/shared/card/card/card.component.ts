@@ -3,12 +3,12 @@ import { ExternalLinkDirective } from '../../external-link/directives/external-l
 import { NgIf } from '@angular/common';
 
 @Component({
-    selector: 'app-card',
-    templateUrl: './card.component.html',
-    styleUrls: ['./card.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
-    imports: [NgIf, ExternalLinkDirective]
+  selector: 'app-card',
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [NgIf, ExternalLinkDirective],
 })
 export class CardComponent {
   @Input() title = '';

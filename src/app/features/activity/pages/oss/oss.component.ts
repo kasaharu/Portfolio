@@ -5,11 +5,11 @@ import { ExternalLinkDirective } from '../../../../shared/external-link/directiv
 import { MatLegacyTableModule } from '@angular/material/legacy-table';
 
 @Component({
-    templateUrl: './oss.component.html',
-    styleUrls: ['./oss.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
-    imports: [MatLegacyTableModule, ExternalLinkDirective]
+  templateUrl: './oss.component.html',
+  styleUrls: ['./oss.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [MatLegacyTableModule, ExternalLinkDirective],
 })
 export class OssPageComponent {
   ossList: Oss[] = ossList;

@@ -1,8 +1,8 @@
 import { Directive, ElementRef, OnInit } from '@angular/core';
 
 @Directive({
-    selector: 'a[appExternalLink]',
-    standalone: true
+  selector: 'a[appExternalLink]',
+  standalone: true,
 })
 export class ExternalLinkDirective implements OnInit {
   constructor(private el: ElementRef) {}
