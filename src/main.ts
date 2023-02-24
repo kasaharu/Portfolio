@@ -1,14 +1,13 @@
-import { enableProdMode, ErrorHandler, APP_INITIALIZER, importProvidersFrom } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { APP_INITIALIZER, enableProdMode, ErrorHandler, importProvidersFrom } from '@angular/core';
 import * as Sentry from '@sentry/angular';
 import { Integrations } from '@sentry/tracing';
 
-import { environment } from './environments/environment';
-import { AppComponent } from './app/app.component';
-import { withInterceptorsFromDi, provideHttpClient } from '@angular/common/http';
-import { AppRoutingModule } from './app/app-routing.module';
-import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { bootstrapApplication, BrowserModule } from '@angular/platform-browser';
 import { Router } from '@angular/router';
+import { AppRoutingModule } from './app/app-routing.module';
+import { AppComponent } from './app/app.component';
+import { environment } from './environments/environment';
 
 Sentry.init({
   dsn: 'https://a64ddf4e943f4e37a318779ebc1108b6@o492848.ingest.sentry.io/5560941',
