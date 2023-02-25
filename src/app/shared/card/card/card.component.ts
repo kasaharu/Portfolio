@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { ExternalLinkDirective } from '../../external-link/directives/external-link.directive';
 import { NgIf } from '@angular/common';
+import { ExternalLinkDirective } from '../../external-link/directives/external-link.directive';
 
 @Component({
   selector: 'app-card',

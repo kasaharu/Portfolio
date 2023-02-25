@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { MatLegacyTableModule } from '@angular/material/legacy-table';
 import { slideList } from '../../data/slide';
 import { ExternalLinkDirective } from '../../../../shared/external-link/directives/external-link.directive';
-import { MatLegacyTableModule } from '@angular/material/legacy-table';
 
 @Component({
   templateUrl: './slide.component.html',

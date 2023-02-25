@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { Article } from '../../domain/feed';
 import { NgFor, DatePipe } from '@angular/common';
+import { Article } from '../../domain/feed';
 
 @Component({
   selector: 'app-article',

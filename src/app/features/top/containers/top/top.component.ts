@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { NgFor } from '@angular/common';
 import { snsList } from '../../data/sns';
 import { ExternalLinkDirective } from '../../../../shared/external-link/directives/external-link.directive';
-import { NgFor } from '@angular/common';
 import { PageTitleComponent } from '../../../../shared/page-title/page-title/page-title.component';
 
 @Component({
