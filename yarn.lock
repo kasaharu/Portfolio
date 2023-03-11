@@ -3453,10 +3453,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@testing-library/angular@13.1.0":
-  version "13.1.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/angular/-/angular-13.1.0.tgz#1ee348a3508ba26838f7cf2fe810e37535a6977d"
-  integrity sha512-v2mXYVyffUdyyXntVo9eW5ghVtEMSGmnl5vPU6C4shmGw3ExpDBZr1QepjbDMFFBNNYjVE43EstMnNVSAXDzuQ==
+"@testing-library/angular@13.4.0":
+  version "13.4.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/angular/-/angular-13.4.0.tgz#089c25fad5ada6f8bdd93a5603ce97d2e55a8488"
+  integrity sha512-CPrTMRoWfwQ1ph4SFZ9AONEBkMFBq2Qf3jzF+pnGQGIDEY6p+k6PUDtyn4XFyHqQAjxczSZRMryW12Hd2EFzxA==
   dependencies:
     "@testing-library/dom" "^8.0.0"
     tslib "^2.3.1"

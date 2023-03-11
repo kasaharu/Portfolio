@@ -48,7 +48,7 @@
     "@angular/language-service": "15.2.2",
     "@briebug/cypress-schematic": "5.0.1",
     "@kasaharu/eslint-plugin-ng": "0.0.2",
-    "@testing-library/angular": "13.1.0",
+    "@testing-library/angular": "13.4.0",
     "@types/jest": "29.4.0",
     "@types/node": "18.15.0",
     "@types/xml2js": "0.4.11",
