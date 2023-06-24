@@ -16,8 +16,7 @@
         "createDefaultProgram": true
       },
       "extends": [
-        "plugin:@angular-eslint/ng-cli-compat",
-        "plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
+        "plugin:@angular-eslint/recommended",
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "plugins": [
@@ -70,7 +69,6 @@
           }
         ],
         "dot-notation": "error",
-        "import/order": "error",
         "indent": [
           "error",
           2
