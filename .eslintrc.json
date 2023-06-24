@@ -20,7 +20,9 @@
         "plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
-      "plugins": ["@kasaharu/ng"],
+      "plugins": [
+        "@kasaharu/ng"
+      ],
       "rules": {
         "@kasaharu/ng/no-ng-no-errors-schema": "error",
         "@angular-eslint/component-selector": [
@@ -46,7 +48,13 @@
           }
         ],
         "@typescript-eslint/member-ordering": "off",
-        "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
+        "arrow-body-style": [
+          "error",
+          "as-needed",
+          {
+            "requireReturnForObjectLiteral": true
+          }
+        ],
         "arrow-parens": [
           "off",
           "always"
@@ -63,7 +71,10 @@
         ],
         "dot-notation": "error",
         "import/order": "error",
-        "indent": ["error", 2],
+        "indent": [
+          "error",
+          2
+        ],
         "linebreak-style": [
           "error",
           "unix"
@@ -80,7 +91,10 @@
         "no-unused-expressions": "error",
         "no-use-before-define": "off",
         "prefer-template": "error",
-        "quotes": ["error", "single"],
+        "quotes": [
+          "error",
+          "single"
+        ],
         "semi": "error"
       }
     },
