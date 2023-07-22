@@ -3415,10 +3415,10 @@
     "@material/theme" "15.0.0-canary.90291f2e2.0"
     tslib "^2.1.0"
 
-"@ngrx/component-store@16.0.1":
-  version "16.0.1"
-  resolved "https://registry.yarnpkg.com/@ngrx/component-store/-/component-store-16.0.1.tgz#193f98264de6401dcea60d06417698ca7d6866aa"
-  integrity sha512-c52V2bHnKV1MRjA+270oEpRa9hTUD7xP8t1eElYzV0ISisILO8xfWB9/C6XOJtjkK6+j6tHQmtiIGK9gZyIh3g==
+"@ngrx/component-store@16.1.0":
+  version "16.1.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/component-store/-/component-store-16.1.0.tgz#3b8451063c57e976456f7e62a69f7ee43da0bb8d"
+  integrity sha512-+isrCOfBLA4m2eFMre0RmnWjiKvbORnJhoO/MtS/Guup8QxLvLQry5iLs4d7g1ckiCqyZGFfuk/6zMdMGMtqbQ==
   dependencies:
     tslib "^2.0.0"
 
