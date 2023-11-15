@@ -2,8 +2,12 @@
 
 <p>はてなブログに投稿された最新の 30 件を表示</p>
 
-<div class="feed-wrapper" *ngIf="articles$ | async as articles">
-  <ng-container *ngFor="let article of articles">
+@if (articles$ | async; as articles) {
+<div class="feed-wrapper">
+  @for (article of articles; track article) {
+  
     <app-article [feedItem]="article"></app-article>
-  </ng-container>
+  
+}
 </div>
+}

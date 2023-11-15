@@ -1,10 +1,12 @@
 <app-page-title [title]="'Labs'"></app-page-title>
 
-<ng-container *ngFor="let content of labsContents">
+@for (content of labsContents; track content) {
+  
   <app-card
     [title]="content.title"
     [demoPageUrl]="content.demoPageUrl"
     [repositoryName]="content.repositoryName"
     [repositoryUrl]="content.repositoryUrl"
   ></app-card>
-</ng-container>
+
+}
