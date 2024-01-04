@@ -2,10 +2,9 @@
   <div class="card-title">{{ title }}</div>
   <div class="external-links">
     @if (demoPageUrl) {
-<a class="link" appExternalLink href="{{ demoPageUrl }}">demo</a>
-}
-    @if (repositoryUrl) {
-<a class="link" appExternalLink href="{{ repositoryUrl }}">GitHub - {{ repositoryName }}</a>
-}
+    <a class="link" appExternalLink href="{{ demoPageUrl }}">demo</a>
+    } @if (repositoryUrl) {
+    <a class="link" appExternalLink href="{{ repositoryUrl }}">GitHub - {{ repositoryName }}</a>
+    }
   </div>
 </div>

@@ -5,12 +5,11 @@
 
   <ul class="information">
     @for (myInfo of myInfoList; track myInfo) {
-  <li class="list-item">{{ myInfo }}</li>
-}
-    @for (sns of snsList; track sns) {
-  <li class="list-item">
+    <li class="list-item">{{ myInfo }}</li>
+    } @for (sns of snsList; track sns) {
+    <li class="list-item">
       <a appExternalLink href="{{ sns.url }}">{{ sns.serviceName }}</a>
     </li>
-}
+    }
   </ul>
 </div>

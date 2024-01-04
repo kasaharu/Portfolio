@@ -2,10 +2,10 @@
 
 <nav mat-tab-nav-bar>
   @for (category of categories; track category) {
-  
-    <a mat-tab-link [active]="activeLink === category.key" [routerLink]="category.key">{{ category.label }}</a>
-  
-}
+
+  <a mat-tab-link [active]="activeLink === category.key" [routerLink]="category.key">{{ category.label }}</a>
+
+  }
 </nav>
 
 <router-outlet></router-outlet>

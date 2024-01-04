@@ -5,9 +5,9 @@
 @if (articles$ | async; as articles) {
 <div class="feed-wrapper">
   @for (article of articles; track article) {
-  
-    <app-article [feedItem]="article"></app-article>
-  
-}
+
+  <app-article [feedItem]="article"></app-article>
+
+  }
 </div>
 }

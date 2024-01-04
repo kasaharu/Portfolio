@@ -1,12 +1,12 @@
 <app-page-title [title]="'Labs'"></app-page-title>
 
 @for (content of labsContents; track content) {
-  
-  <app-card
-    [title]="content.title"
-    [demoPageUrl]="content.demoPageUrl"
-    [repositoryName]="content.repositoryName"
-    [repositoryUrl]="content.repositoryUrl"
-  ></app-card>
+
+<app-card
+  [title]="content.title"
+  [demoPageUrl]="content.demoPageUrl"
+  [repositoryName]="content.repositoryName"
+  [repositoryUrl]="content.repositoryUrl"
+></app-card>
 
 }
