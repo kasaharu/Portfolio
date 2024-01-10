@@ -1,11 +1,12 @@
 <app-page-title [title]="'Activity'"></app-page-title>
 
-<nav mat-tab-nav-bar>
+<nav mat-tab-nav-bar [tabPanel]="tabPanel">
   @for (category of categories; track category) {
 
   <a mat-tab-link [active]="activeLink === category.key" [routerLink]="category.key">{{ category.label }}</a>
 
   }
 </nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
 
 <router-outlet></router-outlet>
