@@ -3749,10 +3749,10 @@
     "@material/theme" "15.0.0-canary.a246a4439.0"
     tslib "^2.1.0"
 
-"@ngrx/component-store@17.0.1":
-  version "17.0.1"
-  resolved "https://registry.yarnpkg.com/@ngrx/component-store/-/component-store-17.0.1.tgz#de84dab7c3595329378ca46b2b82595d6406e87e"
-  integrity sha512-6A7IXzZHAdFadcCILbljNQzrVMwOlx1opdCV/91h3S3ttY7HrPuatyZJyjau8dSf1ANjnAm1kcoof8lZfwhaHg==
+"@ngrx/component-store@17.1.0":
+  version "17.1.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/component-store/-/component-store-17.1.0.tgz#b454f16b201944646260e9f84631989648f36935"
+  integrity sha512-dYaOB/jfXbQ6du/l3Wi4UdFmrIU3PksjCz+u4j5MKGBDNjRsRDKNfiSSJCzRtJDyFIQoYbMVj/SS9+R1VYW1wA==
   dependencies:
     "@ngrx/operators" "17.0.0-beta.0"
     tslib "^2.0.0"

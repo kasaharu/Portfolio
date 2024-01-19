@@ -25,7 +25,7 @@
     "@angular/platform-browser": "17.0.8",
     "@angular/platform-browser-dynamic": "17.0.8",
     "@angular/router": "17.0.8",
-    "@ngrx/component-store": "17.0.1",
+    "@ngrx/component-store": "17.1.0",
     "rxjs": "7.8.1",
     "stream": "0.0.2",
     "timers": "0.1.1",
