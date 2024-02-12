@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TopComponent } from '../../containers/top/top.component';
+import { TopComponent } from './containers/top/top.component';
 
 @Component({
   template: '<app-top></app-top>',

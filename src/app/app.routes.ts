@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { TopPageComponent } from './features/top/pages/top/top.component';
+import { TopPageComponent } from './features/top/top.component';
 
 export const routes: Routes = [
   // { path: '', loadChildren: () => import('./features/top/top.module').then((m) => m.TopModule) },
