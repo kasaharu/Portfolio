@@ -1,8 +1,8 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NgFor } from '@angular/common';
-import { snsList } from '../../data/sns';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ExternalLinkDirective } from '../../../../shared/external-link/directives/external-link.directive';
 import { PageTitleComponent } from '../../../../shared/page-title/page-title/page-title.component';
+import { snsList } from '../../data/sns';
 
 @Component({
   selector: 'app-top',
@@ -13,7 +13,6 @@ import { PageTitleComponent } from '../../../../shared/page-title/page-title/pag
   imports: [PageTitleComponent, NgFor, ExternalLinkDirective],
 })
 export class TopComponent {
-  readonly name = 'kasaharu (Wataru KASAHARA)';
   readonly myInfoList: string[] = ['Web Frontend Engineer', 'Angular Japan User Group Staff'];
   readonly snsList = snsList;
 }
