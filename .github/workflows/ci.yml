@@ -10,12 +10,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version-file: '.node-version'
-          cache: yarn
-      - run: yarn
-      - run: yarn lint
-      - run: yarn prettier:check
-      - run: yarn build
-      - run: yarn test
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run prettier:check
+      - run: npm run build
+      - run: npm run test
         env:
           CI: true
       - name: Archive code coverage results
