@@ -1,8 +1,6 @@
-import { enableProdMode } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
 import { appConfig } from './app/app.config';
-import { environment } from './environments/environment';
 
 // Sentry.init({
 //   dsn: 'https://a64ddf4e943f4e37a318779ebc1108b6@o492848.ingest.sentry.io/5560941',
@@ -22,9 +20,5 @@ import { environment } from './environments/environment';
 //   // We recommend adjusting this value in production
 //   tracesSampleRate: 1.0,
 // });
-
-if (environment.production) {
-  enableProdMode();
-}
 
 bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err));
