@@ -2,7 +2,7 @@
   "hosting": [
     {
       "target": "portfolio",
-      "public": "dist/portfolio",
+      "public": "dist/portfolio/browser",
       "ignore": [
         "firebase.json",
         "**/.*",
