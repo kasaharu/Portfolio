@@ -135,7 +135,20 @@
         },
         "deploy": {
           "builder": "@angular/fire:deploy",
-          "options": {}
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "portfolio:build:production",
+              "serveTarget": "portfolio:serve:production"
+            },
+            "development": {
+              "buildTarget": "portfolio:build:development",
+              "serveTarget": "portfolio:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         },
         "cypress-run": {
           "builder": "@briebug/cypress-schematic:cypress",
