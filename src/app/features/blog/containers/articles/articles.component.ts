@@ -15,7 +15,10 @@ import { ArticleStore } from './article.store';
   imports: [PageTitleComponent, NgIf, NgFor, ArticleComponent, AsyncPipe],
 })
 export class ArticlesComponent implements OnInit {
-  constructor(private readonly _componentStore: ArticleStore, private _usecase: ArticleUsecase) {}
+  constructor(
+    private readonly _componentStore: ArticleStore,
+    private _usecase: ArticleUsecase,
+  ) {}
   articles$ = this._componentStore.blogItems$;
 
   ngOnInit(): void {
