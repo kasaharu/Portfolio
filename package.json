@@ -49,7 +49,7 @@
     "@kasaharu/eslint-plugin-ng": "0.0.2",
     "@testing-library/angular": "15.2.0",
     "@types/jest": "29.5.3",
-    "@types/node": "18.17.4",
+    "@types/node": "20.11.22",
     "@types/xml2js": "0.4.11",
     "@typescript-eslint/eslint-plugin": "7.1.0",
     "@typescript-eslint/parser": "7.1.0",
