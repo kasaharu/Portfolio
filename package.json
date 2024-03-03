@@ -26,7 +26,7 @@
     "@angular/platform-browser-dynamic": "17.2.3",
     "@angular/router": "17.2.3",
     "@ngrx/component-store": "17.1.1",
-    "firebase-tools": "13.2.1",
+    "firebase-tools": "13.4.0",
     "rxjs": "7.8.1",
     "stream": "0.0.2",
     "timers": "0.1.1",
