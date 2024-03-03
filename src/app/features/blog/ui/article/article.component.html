@@ -1,11 +1,9 @@
 <div class="blog-item">
-  <p class="blog-item-date">{{ feedItem.publishDate | date : 'yyyy/MM/dd' }}</p>
+  <p class="blog-item-date">{{ feedItem.publishDate | date: 'yyyy/MM/dd' }}</p>
   <a class="blog-item-link" href="{{ feedItem.link }}" target="_blank" rel="noopener">{{ feedItem.title }}</a>
   <ul class="category">
     @for (category of feedItem.categories; track category) {
-
-    <li class="category-item">{{ category }}</li>
-
+      <li class="category-item">{{ category }}</li>
     }
   </ul>
 </div>

@@ -7,7 +7,10 @@ import { FeedGateway } from '../infrastructures/gateways/feed.gateway';
 
 @Injectable()
 export class ArticleUsecase {
-  constructor(private readonly componentStore: ArticleStore, private readonly feedGateway: FeedGateway) {}
+  constructor(
+    private readonly componentStore: ArticleStore,
+    private readonly feedGateway: FeedGateway,
+  ) {}
 
   async fetchFeed() {
     const rssFeed = await firstValueFrom(this.feedGateway.getRssResponse());

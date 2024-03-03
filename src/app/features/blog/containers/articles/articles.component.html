@@ -3,11 +3,9 @@
 <p>はてなブログに投稿された最新の 30 件を表示</p>
 
 @if (articles$ | async; as articles) {
-<div class="feed-wrapper">
-  @for (article of articles; track article) {
-
-  <app-article [feedItem]="article"></app-article>
-
-  }
-</div>
+  <div class="feed-wrapper">
+    @for (article of articles; track article) {
+      <app-article [feedItem]="article"></app-article>
+    }
+  </div>
 }
