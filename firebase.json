@@ -1,9 +1,11 @@
 {
-  "hosting": [
-    {
-      "target": "portfolio",
-      "source": ".",
-      "frameworksBackend": {}
-    }
-  ]
+  "hosting": {
+    "target": "portfolio",
+    "public": "dist/portfolio/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
 }
