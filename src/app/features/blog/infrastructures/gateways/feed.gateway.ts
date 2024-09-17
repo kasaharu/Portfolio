@@ -10,11 +10,7 @@ export class FeedGateway {
   constructor(private readonly http: HttpClient) {}
 
   getRssResponse(): Observable<RssFeed> {
-    // FIXME: 型に object を使うのをやめる
-    const requestOptions: object = {
-      observe: 'body',
-      responseType: 'text',
-    };
+    const requestOptions: Record<string, unknown> = { observe: 'body', responseType: 'text' };
     return this.http.get<RssFeed>('https://kasaharu.hatenablog.com/rss', requestOptions);
   }
 }
