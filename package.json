@@ -25,7 +25,6 @@
     "@angular/platform-browser": "18.2.4",
     "@angular/platform-browser-dynamic": "18.2.4",
     "@angular/router": "18.2.4",
-    "@ngrx/component-store": "18.0.2",
     "@ngrx/operators": "^18.0.0",
     "@ngrx/signals": "^18.0.2",
     "firebase-tools": "13.14.1",
