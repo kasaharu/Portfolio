@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ArticlesComponent } from '../../containers/articles/articles.component';
+import { ArticlesComponent } from './containers/articles/articles.component';
 
 @Component({
   template: '<app-articles></app-articles>',
