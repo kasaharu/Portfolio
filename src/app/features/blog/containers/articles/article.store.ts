@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Article, Feed } from '../../domain/feed';
 
 @Injectable()
-export class ArticleStore extends ComponentStore<Feed> {
+export class DeprecatedArticleStore extends ComponentStore<Feed> {
   constructor() {
     super({ items: [] });
   }

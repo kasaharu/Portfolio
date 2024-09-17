@@ -1,6 +1,6 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
-import { ArticleStore } from '../containers/articles/article.store';
+import { DeprecatedArticleStore } from '../containers/articles/article.store';
 import { ArticleUsecase } from './article.usecase';
 
 describe('ArticleUsecase', () => {
@@ -9,7 +9,7 @@ describe('ArticleUsecase', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      providers: [ArticleUsecase, ArticleStore],
+      providers: [ArticleUsecase, DeprecatedArticleStore],
       teardown: { destroyAfterEach: false },
     });
     usecase = TestBed.inject(ArticleUsecase);

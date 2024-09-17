@@ -1,22 +1,22 @@
+import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { NgIf, NgFor, AsyncPipe } from '@angular/common';
+import { PageTitleComponent } from '../../../../shared/page-title/page-title/page-title.component';
 import { ArticleUsecase } from '../../applications/article.usecase';
 import { ArticleComponent } from '../../ui/article/article.component';
-import { PageTitleComponent } from '../../../../shared/page-title/page-title/page-title.component';
-import { ArticleStore } from './article.store';
+import { DeprecatedArticleStore } from './article.store';
 
 @Component({
   selector: 'app-articles',
   templateUrl: './articles.component.html',
   styleUrls: ['./articles.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [ArticleStore, ArticleUsecase],
+  providers: [DeprecatedArticleStore, ArticleUsecase],
   standalone: true,
   imports: [PageTitleComponent, NgIf, NgFor, ArticleComponent, AsyncPipe],
 })
 export class ArticlesComponent implements OnInit {
   constructor(
-    private readonly _componentStore: ArticleStore,
+    private readonly _componentStore: DeprecatedArticleStore,
     private _usecase: ArticleUsecase,
   ) {}
   articles$ = this._componentStore.blogItems$;
