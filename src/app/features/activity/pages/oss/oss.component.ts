@@ -5,11 +5,10 @@ import { ossList } from '../../data/oss';
 import { Oss } from '../../domain/models';
 
 @Component({
-  templateUrl: './oss.component.html',
-  styleUrls: ['./oss.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [MatTableModule, ExternalLinkDirective],
+    templateUrl: './oss.component.html',
+    styleUrls: ['./oss.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [MatTableModule, ExternalLinkDirective]
 })
 export class OssPageComponent {
   ossList: Oss[] = ossList;

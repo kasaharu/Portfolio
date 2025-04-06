@@ -6,13 +6,12 @@ import { ArticleComponent } from '../../ui/article/article.component';
 import { ArticleStore } from './article.store';
 
 @Component({
-  selector: 'app-articles',
-  templateUrl: './articles.component.html',
-  styleUrls: ['./articles.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [ArticleStore, ArticleUsecase],
-  standalone: true,
-  imports: [PageTitleComponent, NgIf, NgFor, ArticleComponent],
+    selector: 'app-articles',
+    templateUrl: './articles.component.html',
+    styleUrls: ['./articles.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [ArticleStore, ArticleUsecase],
+    imports: [PageTitleComponent, NgIf, NgFor, ArticleComponent]
 })
 export class ArticlesComponent implements OnInit {
   private readonly store = inject(ArticleStore);

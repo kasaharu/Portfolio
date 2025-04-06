@@ -4,11 +4,10 @@ import { ExternalLinkDirective } from '../../../../shared/external-link/directiv
 import { slideList } from '../../data/slide';
 
 @Component({
-  templateUrl: './slide.component.html',
-  styleUrls: ['./slide.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [MatTableModule, ExternalLinkDirective],
+    templateUrl: './slide.component.html',
+    styleUrls: ['./slide.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [MatTableModule, ExternalLinkDirective]
 })
 export class SlidePageComponent {
   readonly slideList = slideList;

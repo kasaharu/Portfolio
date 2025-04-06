@@ -7,11 +7,10 @@ import { takeUntil } from 'rxjs/operators';
 import { PageTitleComponent } from '../../../../shared/page-title/page-title/page-title.component';
 
 @Component({
-  templateUrl: './activity.component.html',
-  styleUrls: ['./activity.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [PageTitleComponent, MatTabsModule, NgFor, RouterLink, RouterOutlet],
+    templateUrl: './activity.component.html',
+    styleUrls: ['./activity.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [PageTitleComponent, MatTabsModule, NgFor, RouterLink, RouterOutlet]
 })
 export class ActivityPageComponent implements OnDestroy {
   constructor(private readonly router: Router) {

@@ -5,12 +5,11 @@ import { PageTitleComponent } from '../../../../shared/page-title/page-title/pag
 import { snsList } from '../../data/sns';
 
 @Component({
-  selector: 'app-top',
-  templateUrl: './top.component.html',
-  styleUrls: ['./top.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [PageTitleComponent, NgFor, ExternalLinkDirective],
+    selector: 'app-top',
+    templateUrl: './top.component.html',
+    styleUrls: ['./top.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [PageTitleComponent, NgFor, ExternalLinkDirective]
 })
 export class TopComponent {
   readonly myInfoList: string[] = ['Web Frontend Engineer', 'Angular Japan User Group Staff'];
