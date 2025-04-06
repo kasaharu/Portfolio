@@ -5,10 +5,10 @@ import { CardComponent } from '../../../../shared/card/card/card.component';
 import { PageTitleComponent } from '../../../../shared/page-title/page-title/page-title.component';
 
 @Component({
-    templateUrl: './lab.component.html',
-    styleUrls: ['./lab.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
-    imports: [PageTitleComponent, NgFor, CardComponent]
+  templateUrl: './lab.component.html',
+  styleUrls: ['./lab.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [PageTitleComponent, NgFor, CardComponent],
 })
 export class LabPageComponent {
   labsContents = contents;
