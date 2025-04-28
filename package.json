@@ -28,7 +28,7 @@
     "@ngrx/operators": "^19.1.0",
     "@ngrx/signals": "19.1.0",
     "firebase-tools": "13.14.1",
-    "rxjs": "7.8.1",
+    "rxjs": "7.8.2",
     "stream": "0.0.3",
     "timers": "0.1.1",
     "tslib": "2.7.0",
