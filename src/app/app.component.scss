@@ -1,4 +1,4 @@
-@import '../assets/styles/properties';
+@use 'properties' as prop;
 
 :host {
   height: 100vh;
@@ -13,7 +13,7 @@
   flex: 1;
 }
 
-@media screen and (max-width: $p-breakpoint-xsmall) {
+@media screen and (max-width: prop.$p-breakpoint-xsmall) {
   .main {
     width: 90%;
     margin: 1rem auto;

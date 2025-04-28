@@ -1,11 +1,11 @@
-@import '../../../../assets/styles/properties';
+@use 'properties' as prop;
 
 .title {
   font-size: 1.5rem;
   margin-bottom: 24px;
 }
 
-@media screen and (max-width: $p-breakpoint-xsmall) {
+@media screen and (max-width: prop.$p-breakpoint-xsmall) {
   .title {
     font-size: 1rem;
     margin-bottom: 16px;

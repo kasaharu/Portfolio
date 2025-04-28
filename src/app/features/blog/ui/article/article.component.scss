@@ -1,4 +1,4 @@
-@import '../../../../../assets/styles/properties';
+@use 'properties' as prop;
 
 .blog-item {
   min-height: 40px;
@@ -35,7 +35,7 @@
   margin: 4px;
 }
 
-@media screen and (max-width: $p-breakpoint-xsmall) {
+@media screen and (max-width: prop.$p-breakpoint-xsmall) {
   .blog-item {
     min-height: 40px;
     font-size: 12px;

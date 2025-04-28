@@ -1,4 +1,4 @@
-@import '../../../../../assets/styles/properties';
+@use 'properties' as prop;
 
 :host {
   display: block;
@@ -17,7 +17,7 @@
   margin-bottom: 12px;
 }
 
-@media screen and (max-width: $p-breakpoint-xsmall) {
+@media screen and (max-width: prop.$p-breakpoint-xsmall) {
   .contents {
     img {
       width: 80px;
