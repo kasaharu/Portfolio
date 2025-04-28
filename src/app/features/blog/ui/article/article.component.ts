@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { NgFor, DatePipe } from '@angular/common';
+import { DatePipe } from '@angular/common';
 import { Article } from '../../domain/feed';
 
 @Component({
@@ -7,7 +7,7 @@ import { Article } from '../../domain/feed';
   templateUrl: './article.component.html',
   styleUrls: ['./article.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgFor, DatePipe],
+  imports: [DatePipe],
 })
 export class ArticleComponent {
   @Input() feedItem!: Article;

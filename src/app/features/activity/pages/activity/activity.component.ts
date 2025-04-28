@@ -1,4 +1,4 @@
-import { NgFor } from '@angular/common';
+
 import { ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { NavigationEnd, Router, RouterLink, RouterOutlet } from '@angular/router';
@@ -10,7 +10,7 @@ import { PageTitleComponent } from '../../../../shared/page-title/page-title/pag
   templateUrl: './activity.component.html',
   styleUrls: ['./activity.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [PageTitleComponent, MatTabsModule, NgFor, RouterLink, RouterOutlet],
+  imports: [PageTitleComponent, MatTabsModule, RouterLink, RouterOutlet],
 })
 export class ActivityPageComponent implements OnDestroy {
   constructor(private readonly router: Router) {

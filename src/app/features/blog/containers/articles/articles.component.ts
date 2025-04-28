@@ -1,4 +1,4 @@
-import { NgFor, NgIf } from '@angular/common';
+
 import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
 import { PageTitleComponent } from '../../../../shared/page-title/page-title/page-title.component';
 import { ArticleUsecase } from '../../applications/article.usecase';
@@ -11,7 +11,7 @@ import { ArticleStore } from './article.store';
   styleUrls: ['./articles.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [ArticleStore, ArticleUsecase],
-  imports: [PageTitleComponent, NgIf, NgFor, ArticleComponent],
+  imports: [PageTitleComponent, ArticleComponent],
 })
 export class ArticlesComponent implements OnInit {
   private readonly store = inject(ArticleStore);
