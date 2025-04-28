@@ -1,4 +1,3 @@
-
 import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
 import { PageTitleComponent } from '../../../../shared/page-title/page-title/page-title.component';
 import { ArticleUsecase } from '../../applications/article.usecase';

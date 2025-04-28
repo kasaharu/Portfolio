@@ -1,4 +1,3 @@
-
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ExternalLinkDirective } from '../../../../shared/external-link/directives/external-link.directive';
 

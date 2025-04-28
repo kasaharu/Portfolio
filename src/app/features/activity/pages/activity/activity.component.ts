@@ -1,4 +1,3 @@
-
 import { ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { NavigationEnd, Router, RouterLink, RouterOutlet } from '@angular/router';
